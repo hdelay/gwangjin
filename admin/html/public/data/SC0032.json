@@ -1,0 +1,241 @@
+[
+  {
+    "treeId": "11",
+    "treeName": "현황관리",
+    "area1code": "11",
+    "area1name": "현황관리",
+    "iconField": 0
+  },
+  {
+    "treeId": "11.010",
+    "treeName": "조회목록",
+    "area1code": "11",
+    "area1name": "현황관리",
+    "area2code": "11010",
+    "area2name": "조회목록",
+    "iconField": 1
+  },
+  {
+    "treeId": "11.010",
+    "treeName": "신청자 상세보기",
+    "area1code": "11",
+    "area1name": "현황관리",
+    "area2code": "11010",
+    "area2name": "신청자 상세보기",
+    "iconField": 1
+  },
+  
+  {
+    "treeId": "12",
+    "treeName": "지원관리",
+    "area1code": "12",
+    "area1name": "지원관리",
+    "iconField": 0
+  },
+  {
+    "treeId": "12.010",
+    "treeName": "조회목록",
+    "area1code": "12",
+    "area1name": "지원관리",
+    "area2code": "12010",
+    "area2name": "조회목록",
+    "iconField": 1
+  },
+  {
+    "treeId": "12.020",
+    "treeName": "통계내역 상세보기",
+    "area1code": "12",
+    "area1name": "지원관리",
+    "area2code": "12011",
+    "area2name": "통계내역 상세보기",
+    "iconField": 1
+  },
+  
+  {
+    "treeId": "13",
+    "treeName": "공통관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "iconField": 0
+  },
+  {
+    "treeId": "13.010",
+    "treeName": "회원 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12010",
+    "area2name": "회원 관리",
+    "iconField": 1
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12010",
+    "area2name": "회원 관리",
+    "area3code": "1",
+    "area3name": "회원정보조회 목록",
+    "date1": "20160416",
+    "treeId": "13.010.1",
+    "treeName": "회원정보조회 목록"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12010",
+    "area2name": "회원 관리",
+    "area3code": "2",
+    "area3name": "회원정보 상세보기ㅇ",
+    "date1": "20160416",
+    "treeId": "13.010.2",
+    "treeName": "회원정보 상세보기"
+  },
+  
+  {
+    "treeId": "13.020",
+    "treeName": "사용자정보 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "사용자정보 관리",
+    "iconField": 1
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "사용자정보 관리",
+    "area3code": "1",
+    "area3name": "사용자정보조회 목록",
+    "date1": "20160416",
+    "treeId": "13.020.1",
+    "treeName": "사용자정보조회 목록"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "사용자정보 관리",
+    "area3code": "2",
+    "area3name": "사용자정보 상세보기",
+    "date1": "20160416",
+    "treeId": "13.020.2",
+    "treeName": "사용자정보 상세보기"
+  },
+  
+  {
+    "treeId": "13.030",
+    "treeName": "서비스 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12010",
+    "area2name": "서비스 관리",
+    "iconField": 1
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "서비스 관리",
+    "area3code": "1",
+    "area3name": "메뉴 관리",
+    "date1": "20160416",
+    "treeId": "13.030.1",
+    "treeName": "메뉴 관리"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "서비스 관리",
+    "area3code": "2",
+    "area3name": "조직별 권한 관리",
+    "date1": "20160416",
+    "treeId": "13.030.2",
+    "treeName": "조직별 권한 관리"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "서비스 관리",
+    "area3code": "3",
+    "area3name": "사용자별 권한 관리",
+    "date1": "20160416",
+    "treeId": "13.030.3",
+    "treeName": "사용자별 권한 관리"
+  },
+  
+  {
+    "treeId": "13.040",
+    "treeName": "코드 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "코드 관리",
+    "iconField": 1
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "코드 관리",
+    "area3code": "1",
+    "area3name": "공통코드 관리",
+    "date1": "20160416",
+    "treeId": "13.040.1",
+    "treeName": "공통코드 관리"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "코드 관리",
+    "area3code": "2",
+    "area3name": "조직코드 관리",
+    "date1": "20160416",
+    "treeId": "13.040.2",
+    "treeName": "조직코드 관리"
+  },
+  
+  {
+    "treeId": "13.050",
+    "treeName": "게시판 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12010",
+    "area2name": "게시판 관리",
+    "iconField": 1
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "게시판 관리",
+    "area3code": "1",
+    "area3name": "공지사항",
+    "date1": "20160416",
+    "treeId": "13.050.1",
+    "treeName": "공지사항"
+  },
+  {
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "게시판 관리",
+    "area3code": "2",
+    "area3name": "자주하는 질문",
+    "date1": "20160416",
+    "treeId": "13.050.2",
+    "treeName": "자주하는 질문"
+  },
+  
+  {
+    "treeId": "13.060",
+    "treeName": "개인정보 관리",
+    "area1code": "12",
+    "area1name": "공통관리",
+    "area2code": "12011",
+    "area2name": "개인정보 관리",
+    "iconField": 1
+  }
+]

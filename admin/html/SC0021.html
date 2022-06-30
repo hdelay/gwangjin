@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- js -->
+	<script src="/js/common.js"></script>
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+
+</head>
+<body>
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <div class="mainContainer">
+            <h1>광진구 어린이·청소년 <span><strong>마을버스 무상 등록</strong> 관리시스템</span></h1>
+            <form action="">
+                <fieldset>
+                    <legend>로그인 폼</legend>
+
+                    <div class="loginForm clearfix">
+                        <div class="loginFormGroup fl">
+                            <div class="loginId">
+                                <label for="loginId">아이디</label>
+                                <input type="text" id="loginId" class="inputTxt" title="아이디를 입력해주세요" placeholder="아이디를 입력해주세요.">
+                            </div>
+                            <div class="loginPw">
+                                <label for="loginPw">비밀번호</label>
+                                <input type="password" id="loginPw" class="inputTxt" title="비밀번호를 입력해주세요" placeholder="비밀번호를 입력해주세요.">
+                            </div>
+                        </div>
+                        <button class="loginBtn fl">로그인</button>
+                        <button class="loginBtn fl popupBtn">사용자등록</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+    <!-- //wrap -->
+
+    <!-- layerPopup -->
+    <div class="layerPopup">
+        <div class="popTit">
+            <h3>개인정보 활용동의</h3>
+            <div class="popClose">
+                <a href=""></a>
+            </div>
+        </div>
+        <div class="popContents">
+            <h4>개인정보 수집 및 이용 안내</h4>
+            <div class="textBox clearfix">
+                <dl>
+                    <dd>
+                        정보통신망법 규정에 따라 자가격리자 및 접촉자 모니터링 관리시스템 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                    </dd>
+                    <dt>1. 수집하는 개인정보</dt>
+                    <dd>
+                        이용자는 회원가입을 통해 시스템에 대한 정보 서비스를 제공 받을 수 있습니다. 이용자가 자가격리자 및 접촉자 정보 알림 처리 서비스를 이용하기 위해 회원가입을 할 경우, 본 시스템은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+                    </dd>
+                    <dd>
+                        회원가입 시점에 본 시스템이 이용자로부터 수집하는 개인정보는 아래와 같습니다.<br/>
+                        - 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 휴대전화번호’를 필수항목으로 수집합니다. 
+                    </dd>
+                    <dd>
+                        정보통신망법 규정에 따라 자가격리자 및 접촉자 모니터링 관리시스템 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                    </dd>
+                    <dt>1. 수집하는 개인정보</dt>
+                    <dd>
+                        이용자는 회원가입을 통해 시스템에 대한 정보 서비스를 제공 받을 수 있습니다. 이용자가 자가격리자 및 접촉자 정보 알림 처리 서비스를 이용하기 위해 회원가입을 할 경우, 본 시스템은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+                    </dd>
+                    <dd>
+                        회원가입 시점에 본 시스템이 이용자로부터 수집하는 개인정보는 아래와 같습니다.<br/>
+                        - 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 휴대전화번호’를 필수항목으로 수집합니다. 
+                    </dd>
+                    <dd>
+                        정보통신망법 규정에 따라 자가격리자 및 접촉자 모니터링 관리시스템 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                    </dd>
+                    <dt>1. 수집하는 개인정보</dt>
+                    <dd>
+                        이용자는 회원가입을 통해 시스템에 대한 정보 서비스를 제공 받을 수 있습니다. 이용자가 자가격리자 및 접촉자 정보 알림 처리 서비스를 이용하기 위해 회원가입을 할 경우, 본 시스템은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+                    </dd>
+                    <dd>
+                        회원가입 시점에 본 시스템이 이용자로부터 수집하는 개인정보는 아래와 같습니다.<br/>
+                        - 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 휴대전화번호’를 필수항목으로 수집합니다. 
+                    </dd>
+                    <dd>
+                        정보통신망법 규정에 따라 자가격리자 및 접촉자 모니터링 관리시스템 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+                    </dd>
+                    <dt>1. 수집하는 개인정보</dt>
+                    <dd>
+                        이용자는 회원가입을 통해 시스템에 대한 정보 서비스를 제공 받을 수 있습니다. 이용자가 자가격리자 및 접촉자 정보 알림 처리 서비스를 이용하기 위해 회원가입을 할 경우, 본 시스템은 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+                    </dd>
+                    <dd>
+                        회원가입 시점에 본 시스템이 이용자로부터 수집하는 개인정보는 아래와 같습니다.<br/>
+                        - 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 휴대전화번호’를 필수항목으로 수집합니다. 
+                    </dd>
+                </dl>
+                <div class="fr">
+                    <span class="radioGroup">
+                        <input type="radio" id="radio03" name="radioGroup02" value="동의">
+                        <label for="radio03">동의</label>
+                    </span>
+                    <span class="radioGroup mgl-10">
+                        <input type="radio" id="radio04" name="radioGroup02" value="미동의" checked>
+                        <label for="radio04">미동의</label>
+                    </span>
+                </div>
+            </div>
+            <div class="popBtn">
+                <a href="" class="BtnLinegray mgr-10">확인</a>
+                <a href="" class="BtnLinegray cancle">취소</a>
+            </div>
+        </div>
+    </div>
+    <div class="popDim"></div>
+    <!-- //layerPopup -->
+</body>
+</html>

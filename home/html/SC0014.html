@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 마을버스 무상교통 시스템</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="../images/favicon.ico" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <!-- js -->
+    <!--
+    <script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+    -->
+    <script src="../js/pub/jquery-1.12.4.min.js"></script>
+    <script src="../js/pub/jquery-ui.js"></script>
+    <script src="../js/pub/slick.js"></script>
+    <script src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <div class="headerTop">
+                <div class="inner">
+                    <h1 class="logo"><a href="">광진구 마을버스 무상교통 시스템</a></h1>
+                    <div class="userMenu clearfix">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuBtn">
+                        <a href="">
+                            모바일 메뉴버튼
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="inner">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">무상교통 등록 안내</a>
+                            <ul>
+                                <li><a href="">인사말</a></li>
+                                <li><a href="">사업안내</a></li>
+                                <li><a href="">회원가입 안내</a></li>
+                                <li><a href="">신청안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">지원내역</a>
+                            <ul>
+                                <li><a href="">지원금 신청</a></li>
+                                <li><a href="">신청결과</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">알림공간</a>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">자주하는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerDim"></div>
+            </nav>
+            <!-- mobile -->
+            <div class="mobileMenu">
+                <div class="menuTop">
+                    <p>로그인이 필요합니다.</p>
+                    <div class="mobileUserMenu">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuClose">
+                        <a href=""></a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">무상교통 등록 안내</a>
+                        <ul>
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">사업안내</a></li>
+                            <li><a href="">회원가입 안내</a></li>
+                            <li><a href="">신청안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원내역</a>
+                        <ul>
+                            <li><a href="">지원금 신청</a></li>
+                            <li><a href="">신청결과</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">알림공간</a>
+                        <ul>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menuFooterLogo">
+                    <a href=""></a>
+                </div>
+            </div>
+            <!-- //mobile -->
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div class="subMain">
+            <!-- mobile location -->
+            <div class="location">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">홈</a>
+                    </li>
+                    <li>
+                        <a href="">회원관리</a>
+                        <ul>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">회원가입</a>
+                        <ul>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //mobile location -->
+
+            <div class="inner clearfix">
+                <!-- menu -->
+                <div class="leftContent">
+                    <aside class="lnb">
+                        <h2>회원관리</h2>
+                        <ul>
+                            <li><a href="">로그인</a></li>
+                            <li class="on"><a href="">회원가입</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="call">
+                        <span>언제나 친절히 상담해드리겠습니다.</span>
+                        <p><span>1577 - 0000</span></p>
+                        <ul>
+                            <li>평일: 오전 09시 00분 ~ 오후 06시 00분</li>
+                            <li>주말: 오전 10시 00분 ~ 오후 03시 00분</li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- //menu -->
+
+                <!-- container -->
+                <section class="rightContent">
+                    <div class="pcLoca">
+                        <h3>회원가입</h3>
+                        <ul class="clearfix">
+                            <li><a href="">홈</a></li>
+                            <li><a href="">회원관리</a></li>
+                            <li>회원가입</li>
+                        </ul>
+                    </div>
+                    <div class="contents">
+
+                        <div class="joinAge">
+                            
+                            <div class="radioGroup">
+                                <div class="children">
+                                    <input type="radio" id="radio01" name="radioGroup01">
+                                    <label for="radio01">
+                                        <strong>어린이·청소년</strong>
+                                        <span>만 6세 ~ 만 18세의 <b>어린이 및 청소년</b>은 이곳을 선택해주세요.</span>
+                                    </label>
+                                </div>
+                                <div class="adult">
+                                    <input type="radio" id="radio02" name="radioGroup01">
+                                    <label for="radio02">
+                                        <strong>대리인</strong>
+                                        <span>만 6세 ~ 만 18세의 어린이 및 청소년의 <b>대리인</b>은 이곳을 선택해주세요.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <a href="" class="bigBlueBtn mgt-20">회원가입</a>
+
+                        </div>
+
+                        <ul class="step clearfix">
+                            <li>
+                                <span>본인인증</span>
+                            </li>
+                            <li>
+                                <span>약관동의</span>
+                            </li>
+                            <li class="on">
+                                <span>정보입력</span>
+                            </li>
+                            <li>
+                                <span>가입완료</span>
+                            </li>
+                        </ul>
+                        
+                        <div class="certification">
+                            <ul class="clearfix">
+                                <li class="i-pin">
+                                    <a href="">
+                                        <div><img src="../images/ipin.png" alt="아이핀 인증"></div>
+                                        <span>아이핀 인증</span>
+                                    </a>
+                                </li>
+                                <li class="phone-certification">
+                                    <a href="">
+                                        <div><img src="../images/phone.png" alt="휴대폰 인증"></div>
+                                        <span>휴대폰 인증</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="serviceTerms">
+                            <dl>
+                                <dt><span></span>가입약관</dt>
+                                <dd>
+                                    <div class="content">
+                                        <h4>제 1 장 총칙</h4>
+                                        <dl>
+                                            <dt>제 1 조 (목적)</dt>
+                                            <dd>1. 본 약관은 기업마당 사이트가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 이용자와 기업마당 사이트의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</dd>
+                                            <dt>제 2 조 (약관의 효력과 변경)</dt>
+                                            <dd>1. 기업마당 사이트는 귀하가 본 약관 내용에 동의하는 경우 기업마당 사이트의 서비스 제공 행위 및 귀하의 서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.</dd>
+                                            <dd>2. 기업마당 사이트는 본 약관을 사전 고지 없이 변경할 수 있고 변경된 약관은 기업마당 사이트 내에 공지하거나 e-mail을 통해 회원에게 공지하며, 공지와 동시에 그 효력이 발생됩니다. 이용자가 변경된 약관에 동의하지 않는 경우, 이용자는 본인의 회원등록을 취소 (회원탈락)할 수 있으며 계속 사용의 경우는 약관 변경에 대한 동의로 간주 됩니다. </dd>
+                                            <dt>제 3 조 (약관 외 준칙)</dt>
+                                            <dd>1. 본 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신윤리위원회심의규정, 정보통신 윤리강령, 프로그램보호법 및 기타 관련 법령의 규정에 의합니다.</dd>
+                                            <dt>제 4 조 (용어의 정의)</dt>
+                                            <dd> 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</dd>
+                                            <dd>1. 이용자 : 본 약관에 따라 기업마당 사이트가 제공하는 서비스를 받는 자.</dd>
+                                            <dd>2. 가입 : 기업마당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위.</dd>
+                                            <dd>3. 회원 : 기업마당 사이트에 개인 정보를 제공하여 회원 등록을 한 자로서 기업마당 사이트가 제공하는 서비스를 이용할 수 있는 자.</dd>
+                                            <dd>4. 비밀번호 : 이용자와 회원ID가 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 이용자 자신이 선정한 문자와 숫자의 조합.</dd>
+                                            <dd>5. 탈퇴 : 회원이 이용계약을 종료시키는 행위.</dd>
+                                        </dl>
+                                        <h4>제 2 장 서비스 제공 및 이용</h4>
+                                        <dl>
+                                            <dt>제 5 조 (이용계약의 성립)</dt>
+                                            <dd>1. 이용계약은 신청자가 온라인으로 기업마당 사이트에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 완료하는 것으로 성립됩니다.</dd>
+                                            <dd>2. 기업마당 사이트는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.<br/>
+                                                ① 다른 사람의 명의를 사용하여 신청하였을 때<br/>
+                                                ② 이용계약 신청서의 내용을 허위로 기재하였거나 신청하였을 때<br/>
+                                                ③ 다른 사람의 기업마당 사이트 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 때<br/>
+                                                ④ 기업마당 사이트를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우<br/>
+                                                ⑤ 기타 기업마당 사이트가 정한 이용신청요건이 미비 되었을 때<br/></dd>
+                                            <dt>제 6 조 (회원정보 사용에 대한 동의)</dt>
+                                            <dd>1. 회원의 개인정보는 공공기관의 개인정보보호에 관한 법률에 의해 보호됩니다.</dd>
+                                            <dd>2. 기업마당 사이트의 회원 정보는 다음과 같이 사용, 관리, 보호됩니다.<br/>
+                                                ① 개인정보의 사용 : 기업마당 사이트는 서비스 제공과 관련해서 수집된 회원의 신상정보를 본인의 승낙 없이 제3자에게 누설, 배포하지 않습니다.<br/>
+                                                단, 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 정보통신윤리 위원회의 요청이 있는 경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우, 귀하가 기업마당 사이트에 제공한 개인정보를 스스로 공개한 경우에는 그러하지 않습니다.<br/>
+                                                ② 개인정보의 관리 : 귀하는 개인정보의 보호 및 관리를 위하여 서비스의 개인정보관리에서 수시로 귀하의 개인정보를 수정/삭제할 수 있습니다.<br/>
+                                                ③ 개인정보의 보호 : 귀하의 개인정보는 오직 귀하만이 열람/수정/삭제 할 수 있으며, 이는 전적으로 귀하의 ID와 비밀번호에 의해 관리되고 있습니다.<br/>
+                                                따라서 타인에게 본인의 ID와 비밀번호를 알려주어서는 안되며, 작업 종료 시에는 반드시 로그아웃 해 주시기 바랍니다.<br/>
+                                                3. 회원이 본 약관에 따라 이용신청을 하는 것은, 기업마당 사이트가 신청서에 기재된 회원정보를 수집, 이용하는 것에 동의하는 것으로 간주됩니다.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="checkBox fr">
+                                        <input type="checkbox" id="checkbox01">
+                                        <label for="checkbox01">동의합니다</label>
+                                    </div>
+                                </dd>
+                                <dt class="mgt-50"><span></span>개인정보 수집 및 이용에 대한 안내</dt>
+                                <dd>
+                                    <div class="content">
+                                        <h4>제 1 장 총칙</h4>
+                                        <dl>
+                                            <dt>제 1 조 (목적)</dt>
+                                            <dd>1. 본 약관은 기업마당 사이트가 제공하는 모든 서비스(이하 "서비스")의 이용조건 및 절차, 이용자와 기업마당 사이트의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.</dd>
+                                            <dt>제 2 조 (약관의 효력과 변경)</dt>
+                                            <dd>1. 기업마당 사이트는 귀하가 본 약관 내용에 동의하는 경우 기업마당 사이트의 서비스 제공 행위 및 귀하의 서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.</dd>
+                                            <dd>2. 기업마당 사이트는 본 약관을 사전 고지 없이 변경할 수 있고 변경된 약관은 기업마당 사이트 내에 공지하거나 e-mail을 통해 회원에게 공지하며, 공지와 동시에 그 효력이 발생됩니다. 이용자가 변경된 약관에 동의하지 않는 경우, 이용자는 본인의 회원등록을 취소 (회원탈락)할 수 있으며 계속 사용의 경우는 약관 변경에 대한 동의로 간주 됩니다. </dd>
+                                            <dt>제 3 조 (약관 외 준칙)</dt>
+                                            <dd>1. 본 약관에 명시되지 않은 사항은 전기통신기본법, 전기통신사업법, 정보통신윤리위원회심의규정, 정보통신 윤리강령, 프로그램보호법 및 기타 관련 법령의 규정에 의합니다.</dd>
+                                            <dt>제 4 조 (용어의 정의)</dt>
+                                            <dd> 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</dd>
+                                            <dd>1. 이용자 : 본 약관에 따라 기업마당 사이트가 제공하는 서비스를 받는 자.</dd>
+                                            <dd>2. 가입 : 기업마당 사이트가 제공하는 신청서 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위.</dd>
+                                            <dd>3. 회원 : 기업마당 사이트에 개인 정보를 제공하여 회원 등록을 한 자로서 기업마당 사이트가 제공하는 서비스를 이용할 수 있는 자.</dd>
+                                            <dd>4. 비밀번호 : 이용자와 회원ID가 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 이용자 자신이 선정한 문자와 숫자의 조합.</dd>
+                                            <dd>5. 탈퇴 : 회원이 이용계약을 종료시키는 행위.</dd>
+                                        </dl>
+                                        <h4>제 2 장 서비스 제공 및 이용</h4>
+                                        <dl>
+                                            <dt>제 5 조 (이용계약의 성립)</dt>
+                                            <dd>1. 이용계약은 신청자가 온라인으로 기업마당 사이트에서 제공하는 소정의 가입신청 양식에서 요구하는 사항을 기록하여 가입을 완료하는 것으로 성립됩니다.</dd>
+                                            <dd>2. 기업마당 사이트는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.<br/>
+                                                ① 다른 사람의 명의를 사용하여 신청하였을 때<br/>
+                                                ② 이용계약 신청서의 내용을 허위로 기재하였거나 신청하였을 때<br/>
+                                                ③ 다른 사람의 기업마당 사이트 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 때<br/>
+                                                ④ 기업마당 사이트를 이용하여 법령과 본 약관이 금지하는 행위를 하는 경우<br/>
+                                                ⑤ 기타 기업마당 사이트가 정한 이용신청요건이 미비 되었을 때<br/></dd>
+                                            <dt>제 6 조 (회원정보 사용에 대한 동의)</dt>
+                                            <dd>1. 회원의 개인정보는 공공기관의 개인정보보호에 관한 법률에 의해 보호됩니다.</dd>
+                                            <dd>2. 기업마당 사이트의 회원 정보는 다음과 같이 사용, 관리, 보호됩니다.<br/>
+                                                ① 개인정보의 사용 : 기업마당 사이트는 서비스 제공과 관련해서 수집된 회원의 신상정보를 본인의 승낙 없이 제3자에게 누설, 배포하지 않습니다.<br/>
+                                                단, 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 정보통신윤리 위원회의 요청이 있는 경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우, 귀하가 기업마당 사이트에 제공한 개인정보를 스스로 공개한 경우에는 그러하지 않습니다.<br/>
+                                                ② 개인정보의 관리 : 귀하는 개인정보의 보호 및 관리를 위하여 서비스의 개인정보관리에서 수시로 귀하의 개인정보를 수정/삭제할 수 있습니다.<br/>
+                                                ③ 개인정보의 보호 : 귀하의 개인정보는 오직 귀하만이 열람/수정/삭제 할 수 있으며, 이는 전적으로 귀하의 ID와 비밀번호에 의해 관리되고 있습니다.<br/>
+                                                따라서 타인에게 본인의 ID와 비밀번호를 알려주어서는 안되며, 작업 종료 시에는 반드시 로그아웃 해 주시기 바랍니다.<br/>
+                                                3. 회원이 본 약관에 따라 이용신청을 하는 것은, 기업마당 사이트가 신청서에 기재된 회원정보를 수집, 이용하는 것에 동의하는 것으로 간주됩니다.
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                    <div class="checkBox fr">
+                                        <input type="checkbox" id="checkbox02">
+                                        <label for="checkbox02">동의합니다</label>
+                                    </div>
+                                </dd>
+                            </dl>
+                            <a href="" class="bigBlueBtn">확인</a>
+                        </div>
+
+                        <div class="joinpage">
+
+                            <form action="">
+                                <legend>회원가입</legend>
+                                <h4 class="tableTit">대리인 정보</h4>
+                                <table class="tableType01">
+                                    <caption>회원가입</caption>
+                                    <colgroup>
+                                        <col style="width: 25%;"/>
+                                        <col style="width: 75%;"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="">이름</label></th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="">생년월일</label></th>
+                                            <td>1975-01-03</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="input01">아이디</label></span></th>
+                                            <td>
+                                                <div class="inputGroup media fl">
+                                                    <input type="text" id="input01" class="inputText w100-97">
+                                                    <a href="" class="formBtn mgl-5">중복확인</a>
+                                                </div>
+                                                <span class="leftText fl">※ 영문소문자, 숫자로 6~15자로 입력하세요.<br/>(단, 시작은 영문자만 가능)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw01">비밀번호</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw01" class="inputText w100">
+                                                </div>
+                                                <span class="assistantText">
+									                                                    ※ 영문, 숫자, 특수문자 중 2가지 이상 혼합하여 10~20자 입력하세요.(단, 영문자는 반드시 포함)<br/>
+									                                                    ※ 아이디가 포함된 비밀번호는 사용하실 수 없습니다.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw02">비밀번호 확인</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw02" class="inputText w100">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="select01">전화번호</label></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select01" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="select02">휴대전화</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select02" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="email">이메일</label></span></th>
+                                            <td>
+                                                <div class="inputGroup long">
+                                                    <input type="text" id="email" class="inputText w20">
+                                                    <span class="mgl-5 callDash mgr-5">@</span>
+                                                    <input type="text" class="inputText w26">
+                                                    <select id="" class="selectType w20 mgl-5">
+                                                        <option value="">선택</option>
+                                                        <option value="">naver.com</option>
+                                                        <option value="">korea.co.kr</option>
+                                                        <option value="">gmail.com</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="address">주소</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="text" id="address" class="inputText w100-97">
+                                                    <a href="" class="formBtn mgl-5">주소찾기</a>
+                                                </div>
+                                                <div class="inputGroup long mgt-5">
+                                                    <input type="text" class="inputText w50">
+                                                    <input type="text" class="inputText w40 mgl-5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                
+                                <h4 class="tableTit">자녀 정보</h4>
+                                <table class="tableType01">
+                                    <caption>회원가입</caption>
+                                    <colgroup>
+                                        <col style="width: 25%;"/>
+                                        <col style="width: 75%;"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="">이름</label></th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="">생년월일</label></th>
+                                            <td>1975-01-03</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="input01">아이디</label></span></th>
+                                            <td>
+                                                <div class="inputGroup media fl">
+                                                    <input type="text" id="input01" class="inputText w100-97">
+                                                    <a href="" class="formBtn mgl-5">중복확인</a>
+                                                </div>
+                                                <span class="leftText fl">※ 영문소문자, 숫자로 6~15자로 입력하세요.<br/>(단, 시작은 영문자만 가능)</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw01">비밀번호</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw01" class="inputText w100">
+                                                </div>
+                                                <span class="assistantText">
+									                                                    ※ 영문, 숫자, 특수문자 중 2가지 이상 혼합하여 10~20자 입력하세요.(단, 영문자는 반드시 포함)<br/>
+									                                                    ※ 아이디가 포함된 비밀번호는 사용하실 수 없습니다.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw02">비밀번호 확인</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw02" class="inputText w100">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="select01">전화번호</label></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select01" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="select02">휴대전화</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select02" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="email">이메일</label></span></th>
+                                            <td>
+                                                <div class="inputGroup long">
+                                                    <input type="text" id="email" class="inputText w20">
+                                                    <span class="mgl-5 callDash mgr-5">@</span>
+                                                    <input type="text" class="inputText w26">
+                                                    <select id="" class="selectType w20 mgl-5">
+                                                        <option value="">선택</option>
+                                                        <option value="">naver.com</option>
+                                                        <option value="">korea.co.kr</option>
+                                                        <option value="">gmail.com</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="address">주소</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="text" id="address" class="inputText w100-97">
+                                                    <a href="" class="formBtn mgl-5">주소찾기</a>
+                                                </div>
+                                                <div class="inputGroup long mgt-5">
+                                                    <input type="text" class="inputText w50">
+                                                    <input type="text" class="inputText w40 mgl-5">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <a href="" class="bigBlueBtn mgt-20">회원가입</a>
+                            </form>
+
+                        </div>
+
+                        <div class="joinComplete">
+                            <p><span>홍길동</span>님 회원가입이 완료되었습니다.</p>
+                            <div class="btnGroup">
+                                <a href="" class="bigBlueBtn">로그인 하러가기</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footerTop">
+                <div class="inner">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="inner clearfix">
+                    <h2 class="footerLogo"><a href="" title="푸터 로고">광진구 마을버스 무상교통 시스템</a></h2>
+                    <ul>
+                        <li>(05065)서울특별시 광진구 능동로 76 광진구시설관리공단 (우 05065) 고유번호: 206-82-07233</li>
+                        <li>© 2021 GWANGJIN-GU OFFICE. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+<!-- 레이어팝업::회원가입 안내 -->
+<div class="layerPopup">
+
+    <h3>회원가입 안내</h3>
+
+    <div class="popupContents">
+
+        <dl>
+            <dt>회원가입은 대리인이 아닌 수혜자 본인 명의로 진행하여야 합니다.</dt>
+            <dd>
+                <ul>
+                    <li>대리인이 가입절차를 진행할 수 있으나, 대리인의 본인인증을 마친 후 개인정보는 수혜자의 정보를 기입하여야 하고, 반드시 아이핀 혹은 휴대폰을 통해 수혜자 본인인증을 하여야 합니다.</li>
+                    <li>
+                        대상자 본인이 휴대폰이 없는 경우 아이핀 발급을 받아 본인인증을 진행하여야 하며 자세한 정보는 아이핀 발급사인 나이스평가정보에서 확인 바랍니다.
+                        <div class="btnGroup clearfix">
+                            <span>고객센터 <b>☎ 1600-1522</b></span>
+                            <a href="">나이스평가정보 바로가기 →</a>
+                        </div>
+                    </li>
+                    <li>성명·생년월일·주소·연락처 등의 개인정보를 고의 또는 착오로 인하여 실제와 다른 내용으로 입력할 경우 교통비 지급이 제한될 수 있습니다.</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>본 사업은 티머니(주)와 협력하여 진행하는 사업으로, 교통비 지급을 받기 위하여 티머니 홈페이지 및 T마일리지 서비스에 먼저 가입하여야 합니다.</dt>
+            <dd>
+                <ul>
+                    <div class="btnGroup clearfix">
+                        <span>고객센터 <b>☎ 1600-1522</b></span>
+                        <a href="">나이스평가정보 바로가기 →</a>
+                    </div>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>가입자는 마을버스 이용에 사용할 교통카드의 번호를 홈페이지에 등록하여야 합니다.</dt>
+            <dd>
+                <ul>
+                    <li>해당 카드는 광진구 어린이·청소년 무상 교통사업 교통비 산정 및 지급의 근거 자료로 활용됩니다.</li>
+                </ul>
+            </dd>
+        </dl>
+
+        <div class="btnGroup">
+            <a href="" class="popupClose">확인</a>
+        </div>
+
+    </div>
+
+</div>
+<div class="popupDim"></div>
+<!-- //레이어팝업::회원가입 안내 -->
+</body>
+</html>

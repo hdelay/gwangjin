@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 마을버스 무상교통 시스템</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="../images/favicon.ico" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <!-- js -->
+    <!--
+    <script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+    -->
+    <script src="../js/pub/jquery-1.12.4.min.js"></script>
+    <script src="../js/pub/jquery-ui.js"></script>
+    <script src="../js/pub/slick.js"></script>
+    <script src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <div class="headerTop">
+                <div class="inner">
+                    <h1 class="logo"><a href="">광진구 마을버스 무상교통 시스템</a></h1>
+                    <div class="userMenu clearfix">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuBtn">
+                        <a href="">
+                            모바일 메뉴버튼
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="inner">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">무상교통 등록 안내</a>
+                            <ul>
+                                <li><a href="">인사말</a></li>
+                                <li><a href="">사업안내</a></li>
+                                <li><a href="">회원가입 안내</a></li>
+                                <li><a href="">신청안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">지원내역</a>
+                            <ul>
+                                <li><a href="">지원금 신청</a></li>
+                                <li><a href="">신청결과</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">알림공간</a>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">자주하는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerDim"></div>
+            </nav>
+            <!-- mobile -->
+            <div class="mobileMenu">
+                <div class="menuTop">
+                    <p>로그인이 필요합니다.</p>
+                    <div class="mobileUserMenu">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuClose">
+                        <a href=""></a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">무상교통 등록 안내</a>
+                        <ul>
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">사업안내</a></li>
+                            <li><a href="">회원가입 안내</a></li>
+                            <li><a href="">신청안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원내역</a>
+                        <ul>
+                            <li><a href="">지원금 신청</a></li>
+                            <li><a href="">신청결과</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">알림공간</a>
+                        <ul>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menuFooterLogo">
+                    <a href=""></a>
+                </div>
+            </div>
+            <!-- //mobile -->
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div class="subMain">
+            <!-- mobile location -->
+            <div class="location">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">홈</a>
+                    </li>
+                    <li>
+                        <a href="">알림공간</a>
+                        <ul>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">자주하는 질문</a>
+                        <ul>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //mobile location -->
+
+            <div class="inner clearfix">
+                <!-- menu -->
+                <div class="leftContent">
+                    <aside class="lnb">
+                        <h2>알림공간</h2>
+                        <ul>
+                            <li><a href="">공지사항</a></li>
+                            <li class="on"><a href="">자주하는 질문</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="call">
+                        <span>언제나 친절히 상담해드리겠습니다.</span>
+                        <p><span>1577 - 0000</span></p>
+                        <ul>
+                            <li>평일: 오전 09시 00분 ~ 오후 06시 00분</li>
+                            <li>주말: 오전 10시 00분 ~ 오후 03시 00분</li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- //menu -->
+
+                <!-- container -->
+                <section class="rightContent">
+                    <div class="pcLoca">
+                        <h3>자주하는 질문</h3>
+                        <ul class="clearfix">
+                            <li><a href="">홈</a></li>
+                            <li><a href="">알림공간</a></li>
+                            <li>자주하는 질문</li>
+                        </ul>
+                    </div>
+                    <div class="contents">
+                        
+                        <div class="noticePage">
+
+                            <div class="noticeSearch">
+                                <form action="" class="clearfix">
+                                    <legend>검색</legend>
+                                    <dl>
+                                        <dt>검색어</dt>
+                                        <dd>
+                                            <select class="selectType">
+                                                <option value="">전체</option>
+                                                <option value="">제목</option>
+                                                <option value="">내용</option>
+                                            </select>
+                                            <input type="text" class="inputText">
+                                        </dd>
+                                    </dl>
+                                    <div class="btnGroup">
+                                        <a href="" class="searchBtn">조회</a>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <div class="noticeContent">
+
+                                <table class="tableType02">
+                                    <caption>자주하는 질문</caption>
+                                    <colgroup>
+                                        <col width="10%" class="hidden"/>
+                                        <col width="*"/>
+                                        <col width="110px"/>
+                                        <col width="10%" class="hidden"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th class="hidden">순번</th>
+                                            <th>제목</th>
+                                            <th>등록일</th>
+                                            <th class="hidden">조회수</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="hidden">10</td>
+                                            <td class="agn-l">
+                                                <a href="" class="ellipsis">반드시 회원가입을 해야하나요?</a>
+                                            </td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">9</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">시스템 신청 말고 오프라인 신청도 가능한가요?<div class="new">new</div></a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">8</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">카드 재사용 되나요?<div class="new">new</div></a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">7</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">카드 수령은 어떻게 하나요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">6</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">티머니 가입 없이 사용 가능한가요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">5</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">신청은 보호자만 가능한가요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">4</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">전화 가입신청도 가능한가요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">3</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">마을버스 이외 교통수단도 사용 가능한가요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">2</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">2인 이상 사용 가능한가요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="hidden">1</td>
+                                            <td class="agn-l"><a href="" class="ellipsis">카드발급은 우편으로 발급받나요?</a></td>
+                                            <td>2021.10.01</td>
+                                            <td class="hidden">120</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="paging">
+                                    <ul>
+                                        <li class="pprev"><a href="">최신페이지로 이동</a></li>
+                                        <li class="prev"><a href="">이전페이지로 이동</a></li>
+                                        <li><a href="">1</a></li>
+                                        <li><a href="">2</a></li>
+                                        <li><a href="">3</a></li>
+                                        <li><a href="">4</a></li>
+                                        <li><a href="">5</a></li>
+                                        <li><a href="">6</a></li>
+                                        <li><a href="">7</a></li>
+                                        <li><a href="">8</a></li>
+                                        <li><a href="">9</a></li>
+                                        <li><a href="">10</a></li>
+                                        <li class="next"><a href="">다음페이지로 이동</a></li>
+                                        <li class="nnext"><a href="">마지막페이지로 이동</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footerTop">
+                <div class="inner">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="inner clearfix">
+                    <h2 class="footerLogo"><a href="" title="푸터 로고">광진구 마을버스 무상교통 시스템</a></h2>
+                    <ul>
+                        <li>(05065)서울특별시 광진구 능동로 76 광진구시설관리공단 (우 05065) 고유번호: 206-82-07233</li>
+                        <li>© 2021 GWANGJIN-GU OFFICE. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+</body>
+</html>

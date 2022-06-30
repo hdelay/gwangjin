@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+.fl{ float:left !important;}
+.fr{ float: right !important;}
+
+
+.tl{ text-align: left !important;}
+.tr{ text-align: right !important;}
+.tc{ text-align: center !important;}
+
+
+.pd50{ padding:50px 0px !important;}
+
+.pl10{ padding-left:10px !important;}
+
+.pr10{ padding-right:10px !important;}
+
+
+.mr0{ margin-right:0px !important;}
+.mr10{ margin-right:10px;}
+.mr20{ margin-right:20px;}
+.mr30{ margin-right:30px;}
+.mr50{ margin-right:50px;}
+
+.mt30{ margin-top:30px !important;}
+
+
+
+.clear{ clear: both !important;}
+
+
+
+.wfull{ width: 90% !important;}
+.w74p{ width: 74% !important;}
+
+.w60{ width: 60px !important;}
+.w80{ width: 80px !important;}
+.w90{ width: 90px !important;}
+.w125{ width: 125px !important;}
+.w180{ width: 180px !important;}
+.w230{ width: 230px !important;}
+.w275{ width: 275px !important;}
+.w325{ width: 325px !important;}
+.w490{ width:490px !important;}
+
+.h60 	{ height: 60px  	!important;}
+.h80 	{ height: 80px  	!important;}
+.h90 	{ height: 90px  	!important;}
+.h125	{ height: 125px 	!important;}
+.h180	{ height: 180px 	!important;}
+.h230	{ height: 230px 	!important;}
+.h275	{ height: 275px 	!important;}
+.h325	{ height: 325px 	!important;}
+.h410	{ height: 410px 	!important;}
+.h490	{ height: 490px 	!important;}
+.h800	{ height: 800px 	!important;}
+.h920	{ height: 920px 	!important;}
+.h1000	{ height: 1000px	!important;}
+
+.fit{ width:100% !important; display: block !important;}
+.blood-type{width:15% !important; display: inline-block !important; min-width: 110px;}
+.phone{width:15% !important; display: inline-block !important; min-width: 68px;}
+.mail{width:18% !important; display: inline-block !important;     max-width: 123px;}
+.moniter{}
+
+
+.badge-primary{background: #3e97ff; width: 9px; height: 25px; float: left; margin-top: 8px; margin-right: 10px; border-radius: 5px;}
+.badge-secondary{width: 9px; height: 25px;float: left; margin-top: 8px; margin-right: 10px; border-radius: 5px;}
+
+.purple{ background:#eee5ff; color:#8950fc !important;}
+.red{ background:#ffe2e5; color:#f64e60 !important;}
+.blue{ background:#e1f0ff; color:#3699ff !important;}
+.orange{ background:#fbe1c0; color:#ff8507 !important;}
+.green{ background:#d4f7dc; color:#28a745 !important;}
+
+
+
+.red-badge{color:#f64e60 !important;}
+.orange-badge{color:#ff8507 !important;}
+.blue-badge{color:#3699ff !important;}
+.purple-badge{color:#8950fc !important;}
+.gray-badge{color:#bdbdbd !important;}
+.green-badge{color: #00cc66 !important;}
+
+
+.red-bg{background:#f64e60 !important;}
+.orange-bg{background:#ff8507 !important;}
+.blue-bg{background:#3699ff !important;}
+.purple-bg{background:#8950fc !important;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

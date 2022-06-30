@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+
+	<!-- 리얼그리드 tree -->
+    <link href="./test/index.css" rel="stylesheet" />
+    <script src="./test/SC0032.js"></script>
+    
+</head>
+<body>
+    <!-- skip navigation
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+     //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <h2 class="joinTit">사용자등록</h2>
+
+        <!-- main -->
+        <div id="main" class="clearfix join">
+
+            <!-- container -->
+            <div class="container mgb-0 mgt-0">
+            	<div class="btnGroup mgb-15 clearfix">
+            		<!--
+            		<div class="fl">
+            			<span class="topText">검색결과 <strong>0</strong> 개</span>
+            		</div>
+            		-->
+                    <div class="fr">
+                        <a href="" class="BtnLinegray">저장</a>
+                        <a href="" class="BtnLinegray">취소</a>
+                    </div>
+                </div>
+            	<div class="containerJoin">
+                    
+                    <table class="tableType01">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 33%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 37%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="input01"><span class="dot">사용자 ID</span></label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                        <input type="text" id="input01" class="inputTxt w100-105">
+                                        <a href="" class="btnInput edit mgl-5" title="중복체크">중복체크</a>
+                                    </div>
+                                </td>
+                                <th rowspan="7">사진</th>
+                                <td rowspan="7">
+                                	<div class="imageBox">
+                                		<span>사진을 업로드 해주세요.</span>
+                                	</div>
+                                	<div class="inputGroup mgt-5 inputFileBox">
+                                        <input type="text" id="input04" class="inputTxt w100-50 upload_text">
+                                        <a href="" class="search mgl-5 inputFileBtn" title="검색하기"></a>
+                                        <input type="file" class="inputFile" title="파일찾기">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input02"><span class="dot">사용자 명</span></label></th>
+                                <td><input type="text" id="input02" class="inputTxt w100"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="input03"><span class="dot">조직명</span></label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                        <input type="text" id="input03" class="inputTxt w100-50">
+                                        <a href="" class="search mgl-5 modalBtn001" title="검색하기"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input04">직급</label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                        <input type="text" id="input04" class="inputTxt w100-50">
+                                        <a href="" class="search mgl-5 modalBtn002" title="검색하기"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input05">생년월일</label></th>
+                                <td>
+                                	<div class="inputGroup table">
+                                		<input type="text" id="input05" class="inputTxt w100-50 datepicker">
+                                	</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input06"><span class="dot">비밀번호</span></label></th>
+                                <td><input type="password" id="input06" class="inputTxt w100"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="input07"><span class="dot">비밀번호 확인</span></label></th>
+                                <td><input type="password" id="input07" class="inputTxt w100"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="select02">전화번호</label></th>
+                                <td>
+                                	<div class="inputGroup">
+	                                	<select id="select02" class="selectBox w33-20">
+	                                		<option>선택</option>
+	                                	</select>
+	                                	<span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                        <span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                    </div>
+                                </td>
+                                <th><label for="input06"><span class="dot">이메일</span></label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                		<input type="text" id="input06" class="inputTxt w30">
+                                		<span class="mgl-5 mgr-5">@</span>
+                                		<input type="text" class="inputTxt w30">
+	                                	<select class="selectBox w30 mgl-5">
+	                                		<option>직접입력</option>
+	                                		<option>naver.com</option>
+	                                	</select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="select03">팩스번호</label></th>
+                                <td>
+                                	<div class="inputGroup">
+	                                	<select id="select03" class="selectBox w33-20">
+	                                		<option>선택</option>
+	                                	</select>
+	                                	<span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                        <span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                    </div>
+                                </td>
+                                <th><span class="dot"><label for="select04">휴대전화번호</label></span></th>
+                                <td>
+                                	<div class="inputGroup">
+	                                	<select id="select04" class="selectBox w33-20">
+	                                		<option>선택</option>
+	                                	</select>
+	                                	<span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                        <span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w33-20">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input07">주소</label></th>
+                                <td colspan="3">
+                                	<div class="inputGroup">
+                                        <input type="text" id="input07" class="inputTxt w100-50">
+                                        <a href="" class="search mgl-5" title="검색하기"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            	
+            </div>
+            <!-- //container -->
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+    <!-- 레이어팝업001 :: 담당기관 선택 -->
+    <div class="modalPopup modal001">
+    	<div class="modalTit clearfix">
+    		<h3 class="fl">담당기관 선택</h3>
+    		<a href="" class="modalClose fr">닫기</a>
+    	</div>
+    	<div class="modalContent">
+    		<div class="modalContainer clearfix">
+    			<label for="input001" class="fl">기관명</label>
+    			<input type="text" id="input001" class="inputTxt w100-80 fr" placeholder="검색어를 입력해주세요.">
+    			<div class="modalBtnGroup">
+    				<a href="" class="BtnLinegray">초기화</a>
+    				<a href="" class="Btnblack mgl-10">검색</a>
+    			</div>
+    		</div>
+    		<div class="modalOverflow">
+    			<div id="realgrid" class="modalGrid"></div>
+    		</div>
+    	</div>
+    </div>
+    <!-- //레이어팝업001 :: 담당기관 선택 -->
+    <!-- 레이어팝업002 :: 직급 선택 -->
+    <div class="modalPopup modal002">
+    	<div class="modalTit clearfix">
+    		<h3 class="fl">직급 선택</h3>
+    		<a href="" class="modalClose fr">닫기</a>
+    	</div>
+    	<div class="modalContent">
+    		<div class="modalContainer clearfix">
+    			<label for="input001" class="fl">직급명</label>
+    			<input type="text" id="input001" class="inputTxt w100-80 fr" placeholder="검색어를 입력해주세요.">
+    			<div class="modalBtnGroup">
+    				<a href="" class="BtnLinegray">초기화</a>
+    				<a href="" class="Btnblack mgl-10">검색</a>
+    			</div>
+    		</div>
+    		<div class="modalOverflow">
+    			<script type="text/javascript">
+                    document.addEventListener('DOMContentLoaded', function () {
+                        
+                        const container = document.getElementById('realGrid');
+                        const provider = new RealGrid.LocalDataProvider(false);
+                        const gridView = new RealGrid.GridView(container);
+                        //provider.fillJsonData('${userList}', { fillMode: 'set' });
+                       
+                        //var data = JSON.parse('${userList}');
+                        
+                        //컬럼 너비 자동조절
+                        gridView.displayOptions.fitStyle = "even";
+                        
+                        //헤더 높이조정
+                        var headerHeight = gridView.header.height;
+                        gridView.header.height = headerHeight + 50;
+                        
+                        //행높이 조정
+                        var height = gridView.displayOptions.rowHeight;
+						gridView.displayOptions.rowHeight = height + 50;
+						
+						//상태바
+						gridView.setStateBar({
+						  visible: false
+						});
+						//체크박스바
+						gridView.setCheckBar({
+							visible: false
+							//sumText: "string",
+							//headText: "선택",
+							//width: 70
+						});
+						//번호
+						gridView.setRowIndicator({
+							visible: false
+						  //headText: "순번",
+						  //width: "70"
+						});
+                       
+                        gridView.setDataSource(provider);
+                        //데이터의 필드 정의하는 부분
+                        provider.setFields([
+                            {
+	                            fieldName: "emplyr01",
+	                            dataType: "text",
+                            },
+                            {
+	                            fieldName: "emplyr02",
+	                            dataType: "text",
+                            }
+                        ]);
+                        //그리드뷰 푸터 안보이게 
+                        gridView.setFooters({ visible:false});
+                        // 컬럼 생성
+                        gridView.setColumns([
+                          {
+                            name: "emplyr01Column",
+                            fieldName: "emplyr01",
+                            type: "data",
+                            width: "220",
+                            header: {
+                              text: "직급코드",
+                            },
+                          },
+                          {
+                              name: "emplyr02Column",
+                              fieldName: "emplyr02",
+                              type: "data",
+                              width: "439",
+                              header: {
+                                text: "직급명",
+                              },
+                          }
+                        ]); 
+                        //provider.setRows(data);
+                          
+                        provider.setRows([
+                        	{
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            },
+                            {
+                                emplyr01: '00490',
+                                emplyr02: '보건주사보'
+                            }
+                            
+                        ]);
+                        
+                      });
+                   
+                </script> 
+                    
+                <div id="realGrid" class="modalGrid"></div>
+    		</div>
+    	</div>
+    </div>
+    <!-- //레이어팝업002 :: 담당기관 선택 -->
+    
+    <div class="modalDim"></div>
+</body>
+</html>

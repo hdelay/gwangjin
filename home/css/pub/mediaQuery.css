@@ -1,0 +1,803 @@
+@charset "utf-8";
+
+/* media Query */
+@media screen and (max-width: 1279px) {
+    
+    .inner {
+        width: 100%;
+    }
+    /* header */
+    header nav .inner > ul > li > a::before {
+        left: 0;
+        margin-left: 0;
+        width: 0;
+    }
+    header nav .inner > ul > li.on > a::before {
+        width: 100%;
+    }
+    /* 2depth */
+    header nav ul ul li a {
+        text-indent: 33%;
+    }
+    header nav ul ul li a {
+        background: url(../../images/ico/ico_menu_off.png) no-repeat 24% 15px;
+    }
+    header nav ul ul li:hover a {
+        background: url(../../images/ico/ico_menu_on.png) no-repeat 24% 15px;
+    }
+    /* main */
+    .keyvisualList li img {
+        width: 100%;
+    }
+    .quick .quickInfo h3 {
+        background-size: 20%;
+        padding-left: 30%;
+        font-size: 20px;
+    }
+    .quick .quickInfo h3 span {
+        font-size: 20px;
+    }
+    .quick .quickInfo ul li,
+    .quick .quickInfo ul li span {
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    /* header */
+    header {
+        height: 65px;
+        background-color: #43599f;
+    }
+    .headerTop {
+        height: 100%;
+    }
+    .headerTop, .headerTop .inner {
+        height: 100%;
+    }
+    .headerTop .logo {
+        left: 0;
+        margin-left: 0;
+        margin-top: -19px;
+    }
+    .headerTop .logo a {
+        width: 122px;
+        height: 33px;
+        background: url(../../images/mobileLogo.png) no-repeat left center;
+        background-size: 100%;
+    }
+    .mobileMenuBtn {
+        display: block;
+    }
+    .userMenu {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    .mobileMenu {
+        display: block;
+    }
+
+    /* main */
+    .section01 {
+        height: inherit;
+        padding: 20px 0;
+        background: url(../../images/main-bg.png) no-repeat center;
+        background-size: cover;
+    }
+    .section01 .inner {
+        width: 100%;
+    }
+    .section01 .keyvisual {
+        width: 100%;
+        height: 272px;
+    }
+    .slick-prev::before {
+        display: none;
+    }
+    .slick-next::before {
+        display: none;
+    }
+    .slick-dots {
+        bottom: 10px;
+    }
+    .keyvisualList li img {
+        height: 272px;
+    }
+    .section01 .quick {
+        width: 100%;
+    }
+    .quick .quickBtn {
+        padding: 30px 0;
+    }
+    .quick .quickBtn li a {
+        font-size: 1em;
+    }
+    .quick .quickInfo::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .quick .quickInfo h3 {
+        float: left;
+        width: 50%;
+        height: 100%;
+        padding-left: 0;
+        padding-top: 100px;
+        padding-right: 10px;
+        text-align: center;
+        background-position: 50% 20%;
+        background-size: 35%;
+        font-size: 17px;
+    }
+    .quick .quickInfo h3 span {
+        font-size: 17px;
+    }
+    .quick .quickInfo h3::after {
+        top: 0;
+        right: 0;
+        bottom: inherit;
+        left: inherit;
+        width: 2px;
+        height: 100%;
+        border: none;
+        background: url(../../images/dotLine.png);
+    }
+    .quick .quickInfo ul {
+        float: left;
+        width: 50%;
+        padding-top: 3%;
+    }
+    .quick .quickInfo ul li,
+    .quick .quickInfo ul li span {
+        font-size: 17px;
+        line-height: 30px;
+        margin-left: 0;
+    }
+    .quick .quickInfo ul li:nth-child(1)::before {
+        content: "상담전화";
+        display: block;
+        font-size: 17px;
+    }
+    .quick .quickInfo ul li:nth-child(2) {
+        margin-top: 10px;
+    }
+    .quick .quickInfo ul li:nth-child(2) span {
+        display: block;
+        font-weight: 400;
+    }
+
+    /* section02 */
+    .section02 {
+        padding: 20px 0;
+    }
+    .section02 .inner {
+        width: 100%;
+    }
+    .section02 .contents .notice {
+        width: 100%;
+    }
+    .section02 .contents .bannerZone {
+        width: 100%;
+    }
+    .notice .tabTit ul li a {
+        font-size: 16px;
+    }
+    .notice .tabList .best ul li a h3 {
+        font-size: 18px;
+    }
+    .notice .tabList .list li a span.text {
+        width: 72%;
+    }
+    .section02 .contents .bannerZone {
+        height: inherit;
+    }
+    .bannerZone h3 {
+        font-size: 16px;
+    }
+    .bannerZone ul li {
+        height: 136px;
+    }
+    .bannerZone ul li:nth-child(1) a {
+        background-size: 100% 100%;
+    }
+    .bannerZone ul li:nth-child(2) a {
+        background-size: 100% 100%;
+    }
+
+    /* footer */
+    footer .footerTop ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer .footerTop ul::after {
+        content: "";
+        display: none;
+        clear: both;
+    }
+    footer .footerTop ul li {
+        float: inherit;
+    }
+    footer .footerTop ul li a {
+        font-size: 12px;
+        padding: 0;
+    }
+    footer .footerTop ul li a::after {
+        display: none;
+    }
+
+    .footerLogo {
+        display: none;
+    }
+    .footerBottom ul {
+        float: inherit;
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+    }
+
+
+    /* mobile */
+
+    /* submain */
+    .subMain {
+        padding: 0 0 20px;
+    }
+    .subMain .inner {
+        width: 100%;
+    }
+    .location {
+        display: block;
+    }
+    .lnb {
+        display: none;
+    }
+    .call {
+        display: none;
+    }
+    .rightContent {
+        width: 100%;
+        padding: 30px 10px;
+    }
+    .rightContent .pcLoca h3 {
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .rightContent .pcLoca ul {
+        display: none;
+    }
+
+    
+    /* table */
+	.tableTit {
+		font-size: 16px;
+	}
+    .tableType01 {
+        font-size: 10px;
+    }
+    .tableType01 tbody th {
+        padding: 3px 8px;
+    }
+    .tableType01 tbody td {
+        padding: 5px 8px;
+        line-height: 39px;
+    }
+    .hidden {
+        display: none;
+    }
+
+    .tableType02 thead tr th {
+        font-size: 14px;
+    }
+    .tableType02 tbody tr td {
+        font-weight: 200;
+        text-align: center;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    .tableType03 tbody tr th {
+        font-size: 14px;
+    }
+    .tableType03 tbody tr td.tit {
+        font-size: 18px;
+    }
+    .tableType03 tbody tr td {
+        padding: 15px 10px;
+        font-weight: 200;
+        font-size: 14px;
+        text-align: left;
+    }
+    .tableType03 tbody tr td a {
+        font-size: 14px
+    }
+    /* text */
+    .underline {
+        font-size: 14px;
+    }
+
+    /* dot */
+    .dot::after {
+        top: -2px;
+    }
+    /* 버튼 */
+    .formBtn {
+        font-size: 12px;
+    }
+    /* 보조텍스트 */
+    .leftText,
+    .assistantText {
+        font-size: 10px;
+        letter-spacing: -1px;
+    }
+
+    /* 페이징 */
+    .paging ul li {
+        margin-right: 3px;
+    }
+    .paging ul li a {
+        width: 18px;
+        height: 18px;
+        font-size: 10px;
+    }
+
+    /* 인사말 */
+    .contents .introduce h4 span {
+        font-size: 25px;
+    }
+    .contents .introduce h4 strong {
+        display: block;
+    }
+    .contents .introduce img {
+        width: 100%;
+    }
+    .contents .introduce p {
+        font-size: 15px;
+        letter-spacing: -1px;
+        padding-bottom: 0;
+    }
+
+    /* 사업안내 */
+    .contents .businessInformation dl {
+        padding: 10px 0;
+    }
+    .contents .businessInformation dl dt {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+    .contents .businessInformation dl dt img {
+        width: 30px;
+        margin-bottom: 0;
+    }
+    .contents .businessInformation dl dd,
+    .contents .businessInformation dl dd:last-child {
+        width: calc(100% - 100px);
+        height: 100px;
+        font-size: 14px;
+        line-height: 16px;
+        padding: 5px;
+    }
+    .contents .businessInformation dl dd:last-child {
+        align-items: flex-start;
+        margin-bottom: 10px;
+    }
+    .contents .businessInformation ul li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .contents .businessInformation ul li a {
+        font-size: 12px;
+    }
+
+    /* 신청안내 */
+    .applyInformation h4 {
+        font-size: 16px;
+    }
+    .applyStep {
+        flex-direction: column;
+    }
+    .applyStep li {
+        position: relative;
+        width: 100%;
+        margin-bottom: 40px;
+        font-size: 14px;
+    }
+    .applyStep li span {
+        font-size: 16px;
+    }
+    .applyStep li::after {
+        content: "↓";
+        position: absolute;
+        bottom: -28px;
+        left: 50%;
+        right: inherit;
+        top: inherit;
+        margin-left: -8px;
+        margin-right: 0;
+    }
+    .applyStep li:last-child:after {
+        display: none;
+    }
+    .applyStep li:last-child {
+        width: 100%;
+    }
+    .applyInformation ul:last-child li {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* 지원금신청 */
+    .cardNumber {
+        width: 100%;
+        margin: 0;
+    }
+    .cardNumber a {
+        margin-top: 20px;
+    }
+
+    /* 티머니 가입하러가기(팝업) */
+    .layerPopup .tmoneyCont {
+        flex-direction: column;
+        height: inherit;
+    }
+    .layerPopup .tmoneyCont .left {
+        width: 100%;
+        height: 300px;
+    }
+    .layerPopup .tmoneyCont .right {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .layerPopup.tmoney .popupClose {
+        top: -80px;
+        left: 50%;
+        margin-left: -25px;
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        background-color: #fff;
+    }
+    .layerPopup.tmoney .popupClose span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .layerPopup.tmoney .popupClose span:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    /* 신청결과 */
+    .contents > .result .resultText img {
+        width: 100px;
+    }
+    .contents > .result .resultText p {
+        font-size: 25px;
+    }
+    .contents > .result .resultText p span:last-child {
+        display: block;
+        padding: 10px 0;
+    }
+    .contents > .result .resultText > span:last-child {
+        font-size: 16px;
+    }
+    .contents > .result .tableType01 {
+        width: 100%;
+    }
+    .contents > .result .tableType01 td {
+        line-height: 20px;
+    }
+
+    /* 공지사항 */
+    .noticeSearch form {
+        flex-direction: column;
+    }
+    .noticeSearch dl {
+        flex-direction: column;
+        width: 100%;
+    }
+    .noticeSearch dl dd {
+        width: 100%;
+    }
+    .noticeSearch dl dd select {
+        width: calc(30% - 10px);
+    }
+    .noticeSearch dl dd input {
+        width: 70%;
+        margin-left: 6px;
+    }
+    .noticeSearch .btnGroup {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* step */
+    .step li {
+        height: 58px;
+    }
+    .step li::after {
+        right: -13px;
+        width: 13px;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    .step li.on::after {
+        background-size: 100% 100%;
+    }
+    .step li span {
+        top: 50%;
+        left: 30%;
+        margin-top: -20px;
+        padding-top: 28px;
+        font-size: 12px;
+        background-size: 70%;
+    }
+    .step li:nth-child(1) span {
+        background: url(../../images/ico/ico_step01.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+    .step li:nth-child(2) span {
+        background: url(../../images/ico/ico_step02.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+    .step li:nth-child(3) span {
+        background: url(../../images/ico/ico_step03.png) no-repeat 57% top;
+        background-size: 45%;
+    }
+    .step li:nth-child(4) span {
+        background: url(../../images/ico/ico_step04.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+    .step li.on:nth-child(1) span {
+        background: url(../../images/ico/ico_step01_h.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+    .step li.on:nth-child(2) span {
+        background: url(../../images/ico/ico_step02_h.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+    .step li.on:nth-child(3) span {
+        background: url(../../images/ico/ico_step03_h.png) no-repeat 57% top;
+        background-size: 45%;
+    }
+    .step li.on:nth-child(4) span {
+        background: url(../../images/ico/ico_step04_h.png) no-repeat 57% top;
+        background-size: 50%;
+    }
+
+    /* 로그인 */
+    .contents .login {
+        width: 100%;
+        margin: 30px 0 50px;
+    }
+    .contents .login h4 {
+        font-size: 19px;
+        letter-spacing: -1px;
+    }
+    .contents .login h4 img {
+        width: 150px;
+    }
+    .login .btnGroup div a {
+        height: 44px;
+        line-height: 44px;
+        font-size: 14px;
+    }
+    /* 아이디/비밀번호찾기 */
+    .idpw .idSearch,
+    .idpw .pwSearch {
+        width: 100%;
+    }
+    .idpw .callDash {
+        line-height: 39px;
+    }
+    .certificationArea {
+        width: 100%;
+        margin: 50px 0 0;
+    }
+    .certificationArea dl {
+        float: inherit;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .certificationArea dl dt {
+        padding: 15px 0;
+    }
+    .certificationArea dl dd {
+        padding: 10px;
+    }
+
+    /* 어린이청소년/대리인 선택 */
+    .joinAge {
+        width: 100%;
+    }
+    .joinAge .radioGroup {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .joinAge .radioGroup > div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .joinAge .radioGroup > div label {
+        width: 100%;
+        height: 200px;
+    }
+    .joinAge .radioGroup > div label strong {
+        background-color: rgba(255,255,255,.7);
+        line-height: 30px;
+        font-size: 25px;
+    }
+    .joinAge .radioGroup > div label span {
+        width: 100%;
+        background-color: rgba(255,255,255,.7);
+        line-height: 20px;
+        font-size: 14px;
+        margin-top: 130px;
+    }
+
+    /* 회원가입 */
+    
+    .inputText {
+        padding: 10px 4px;
+        font-size: 12px;
+    }
+    .selectType {
+        padding: 10px 4px;
+        font-size: 10px;
+    }
+    .inputGroup.long .w20 {
+        width: 30% !important;
+    }
+    .inputGroup {
+        width: 100% !important;
+    }
+
+    /* 본인인증 */
+    .certification li a span {
+        width: 80%;
+    }
+    .certification li {
+        margin: 50px 0;
+    }
+
+    /* 약관동의 */
+    .serviceTerms > dl > dt {
+        font-size: 16px;
+    }
+    .serviceTerms > dl > dt > span {
+        width: 7px;
+        height: 15px;
+    }
+    .serviceTerms > dl > dt > span::after {
+        top: 1px;
+        left: 2px;
+        width: 3px;
+        height: 3px;
+    }
+    .serviceTerms > dl > dd .content {
+        padding: 15px;
+    }
+    .serviceTerms > dl > dd .content h4,
+    .serviceTerms > dl > dd .content dl {
+        font-size: 13px;
+    }
+    .serviceTerms .checkbox label {
+        font-size: 12px !important;
+    }
+
+    /* 가입완료 */
+    .joinComplete {
+        width: 100%;
+    }
+    .joinComplete p {
+        padding-top: 150px;
+        background-size: 20%;
+        font-size: 20px;
+    }
+    .joinComplete .btnGroup {
+        margin: 50px 0;
+    }
+    .bigBlueBtn {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    /* 사이트맵 */
+    .siteMap dl {
+        float: inherit;
+        width: 100%;
+        height: inherit;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .siteMap dl dt {
+        font-size: 16px;
+    }
+    .siteMap dl dd a {
+        font-size: 14px;
+    }
+
+    /* 레이어팝업 */
+    .layerPopup {
+        top: 10%;
+        left: 50%;
+        width: 90%;
+        margin-left: -45%;
+        padding: 30px 0;
+    }
+    .layerPopup h3 {
+        font-size: 25px;
+        text-align: center;
+        padding: 0 30px;
+        padding-bottom: 20px;
+    }
+    .layerPopup .popupContents {
+        padding: 15px 20px;
+    }
+    .popupContents dl dt {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .popupContents dl dd {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .popupContents dl dd a {
+        font-size: 14px;
+    }
+    .popupContents dl .btnGroup span b {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    /* main */
+    .quick .quickBtn li a {
+        font-size: .9em;
+    }
+    .quick .quickInfo {
+        padding: 20px 0;
+    }
+    .quick .quickInfo h3 {
+        font-size: 13px;
+        background-size: 50%;
+        padding-top: 116px;
+        box-sizing: border-box;
+    }
+    .quick .quickInfo h3 span {
+        font-size: 13px;
+        line-height: 13px;
+    }
+    .quick .quickInfo ul li {
+        font-size: 14px;
+        line-height: 30px;
+        padding-left: 30px;
+    }
+    .quick .quickInfo ul li span {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    .quick .quickInfo ul li:nth-child(1) {
+        background-size: 15%;
+        background-position: 6px 7px;
+    }
+    .quick .quickInfo ul li:nth-child(1)::before {
+        content: "상담전화";
+        display: block;
+        font-size: 14px;
+    }
+    .quick .quickInfo ul li:nth-child(2) {
+        margin-top: 10px;
+        background-size: 12%;
+        background-position: 8px 7px;
+    }
+    .quick .quickInfo ul li:nth-child(2) span {
+        display: block;
+        font-weight: 400;
+    }
+}

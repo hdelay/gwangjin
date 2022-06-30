@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+
+/* main */
+
+.section01 {
+    height: 560px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: url(../../images/main-bg.png) no-repeat center -285px;
+}
+.section01 .inner {
+    height: 100%;
+    box-shadow: 5px 5px 5px rgba(0,0,0,.1);
+}
+.section01 .keyvisual {
+    width: 68%;
+    height: 100%;
+    background-color: #ddd;
+}
+.keyvisualList {
+    height: 100%;
+}
+.keyvisualList li {
+    height: 100%;
+}
+.keyvisualList li img {
+    height: 460px;
+}
+
+.section01 .quick {
+    width: 32%;
+    height: 100%;
+    background-color: #fff;
+}
+.quick .quickBtn {
+    width: 100%;
+    padding: 57px 0;
+}
+.quick .quickBtn li {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.quick .quickBtn li a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.quick .quickBtn li a img {
+    display: block;
+    margin: 0 auto 22px;
+    transition: .3s;
+}
+.quick .quickBtn li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 0;
+    width: 1px;
+    height: 60px;
+    background-color: #000;
+    opacity: .2;
+}
+.quick .quickBtn li a:hover img {
+    transform: rotateY(360deg);
+}
+
+.quick .quickInfo {
+    background: #43599f;
+    height: 243px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    color: #fff;
+}
+.quick .quickInfo h3 {
+    position: relative;
+    width: 100%;
+    padding-left: 93px;
+    background: url(../../images/ico/ico_quick.png) no-repeat 16px 3px;
+    line-height: 33px;
+    box-sizing: border-box;
+}
+.quick .quickInfo h3,
+.quick .quickInfo h3 span {
+    font-size: 25px;
+    font-weight: 400;
+}
+.quick .quickInfo h3 span {
+    display: block;
+}
+.quick .quickInfo h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    border: 2px dashed #fff;
+}
+.quick .quickInfo ul {
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+.quick .quickInfo ul li {
+    padding-left: 70px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+}
+.quick .quickInfo ul li span {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 40px;
+    margin-left: 5px;
+}
+
+.section02 {
+    padding: 50px 0;
+}
+.section02 .contents .notice {
+    width: calc(50% - 10px);
+}
+.notice  .tabTit {
+    position: relative;
+}
+.notice  .tabTit ul {
+    border-bottom: 1px solid #ddd;
+}
+.notice  .tabTit ul li {
+    float: left;
+}
+.notice  .tabTit ul li a {
+    display: block;
+    padding: 19px 35px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.notice  .tabTit ul li.on a {
+    background-color: #43599f;
+    color: #fff;
+}
+.notice  .tabTit ul.on {
+    border-color: #43599f;
+}
+.more a {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 57px;
+    height: 57px;
+    background: url(../../images/ico/ico_more.png) no-repeat center;
+    text-indent: -9999px;
+}
+
+.notice .tabList {
+    position: relative;
+    height: 378px;
+}
+.tabList > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.tabList > div:nth-child(2) {
+    display: none;
+}
+.notice .tabList .best ul li {
+    float: left;
+    width: 50%;
+    padding: 30px 15px 55px;
+    box-sizing: border-box;
+}
+.notice .tabList .best ul li a {
+    display: block;
+    position: relative;
+}
+.notice .tabList .best ul li a h3 {
+    background: url(../../images/ico/ico_notice.png) no-repeat;
+    padding-bottom: 5px;
+    text-indent: 40px;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.notice .tabList .best ul li a p {
+    width: 95%;
+    padding: 10px 0;
+    line-height: 20px;
+    height: 51px;
+    box-sizing: border-box;
+}
+.notice .tabList .best ul li a span {
+    position: absolute;
+    bottom: -30px;
+    right: -10px;
+    font-size: 15px;
+    font-weight: 200;
+}
+.notice .tabList .best ul li a:hover p {
+    text-decoration: underline;
+}
+.notice .tabList .list,
+.notice .tabList .FAQ {
+    padding: 30px 15px;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+}
+.notice .tabList .list li,
+.notice .tabList .FAQ li {
+    line-height: 25px;
+}
+.notice .tabList .list li a {
+    display: block;
+    height: 25px;
+}
+.notice .tabList .list li a span.text {
+    width: 80%;
+    font-size: 16px;
+}
+.notice .tabList .list li a span.date {
+    float: right;
+    font-size: 15px;
+    font-weight: 200;
+    color: #444;
+}
+.notice .tabList .list li a:hover .text {
+    text-decoration: underline;
+}
+.notice .tabList .FAQ li a {
+    display: block;
+    width: 90%;
+}
+
+.section02 .contents .bannerZone {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 410px;
+    border-bottom: 1px solid #c8c8c8;
+}
+.bannerZone h3 {
+    padding: 19px 35px 19px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #c8c8c8;
+}
+.bannerZone ul li {
+    width: 100%;
+    height: 172px;
+    background-color: #ddd;
+    margin-top: 10px;
+}
+.bannerZone ul li:nth-child(1) {
+    margin-top: 0;
+}
+.bannerZone ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: -9999px;
+}
+.bannerZone ul li:nth-child(1) a {
+    background: url(../../images/banner01.png);
+}
+.bannerZone ul li:nth-child(2) a {
+    background: url(../../images/banner02.png);
+}
+
+
+
+
+
+
+
+
+

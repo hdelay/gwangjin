@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+	
+	
+	<!-- Custom -->
+    <link href="./test/index.css" rel="stylesheet" />
+    <script src="./test/SC0032.js"></script>
+
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>사용자정보관리 목록</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main clearfix">
+
+            <!-- container -->
+            <div class="layoutLeft fl w30-10">
+            	<div class="container mgt-0 mgb-0">
+	                <div class="btnGroup mgb-15 clearfix">
+	                    <div class="fl">
+	                        <h3 class="topText">메뉴정보</h3>
+	                    </div>
+	                    <div class="fr">
+	                        <a href="" class="BtnLinegray">엑셀다운</a>
+	                    </div>
+	                </div> 
+	                <div class="mgt-15 treeMenu">
+	                	<div id="realgrid"></div>
+	                </div>
+	            </div>
+            </div>
+            <!-- //container -->
+            
+            <div class="layoutRight fr w70-10">
+                <!-- container -->
+                <div class="container mgt-0">
+                    <div class="btnGroup mgb-15 clearfix">
+                        <div class="fl">
+                            <h3 class="topText">하위메뉴 목록</h3>
+                        </div>
+                        <div class="fr">
+                            <a href="" class="BtnLinegray">삭제</a>
+                            <a href="" class="BtnLinegray">메뉴추가</a>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                    	document.addEventListener('DOMContentLoaded', function () {
+                        
+                        const container = document.getElementById('realGrid');
+                        const provider = new RealGrid.LocalDataProvider(false);
+                        const gridView = new RealGrid.GridView(container);
+                        //provider.fillJsonData('${userList}', { fillMode: 'set' });
+                       
+                        //var data = JSON.parse('${userList}');
+                        
+                        //컬럼 너비 자동조절
+                        gridView.displayOptions.fitStyle = "even";
+                        
+                        //헤더 높이조정
+                        var headerHeight = gridView.header.height;
+                        gridView.header.height = headerHeight + 50;
+                        
+                        //행높이 조정
+                        var height = gridView.displayOptions.rowHeight;
+						gridView.displayOptions.rowHeight = height + 50;
+						
+						//상태바
+						gridView.setStateBar({
+						  visible: false
+						});
+						//체크박스바
+						gridView.setCheckBar({
+							visible: false
+							//sumText: "string",
+							//headText: "선택",
+							//width: 70
+						});
+						//번호
+						gridView.setRowIndicator({
+						  headText: "순번",
+						  width: "70"
+						});
+                       
+                        gridView.setDataSource(provider);
+                        //데이터의 필드 정의하는 부분
+                        provider.setFields([
+                            {
+	                            fieldName: "emplyr01",
+	                            dataType: "text",
+                            },
+                            {
+	                            fieldName: "emplyr02",
+	                            dataType: "text",
+                            },
+                            {
+	                            fieldName: "emplyr03",
+	                            dataType: "text",
+                            },
+                            {
+	                            fieldName: "emplyr04",
+	                            dataType: "text",
+                            },
+                            {
+	                            fieldName: "emplyr05",
+	                            dataType: "text",
+                            }
+                        ]);
+                        //그리드뷰 푸터 안보이게 
+                        gridView.setFooters({ visible:false});
+                        // 컬럼 생성
+                        gridView.setColumns([
+                          {
+                            name: "emplyr01Column",
+                            fieldName: "emplyr01",
+                            type: "data",
+                            width: "140",
+                            header: {
+                              text: "메뉴 ID",
+                            },
+                          },
+                          {
+                              name: "emplyr02Column",
+                              fieldName: "emplyr02",
+                              type: "data",
+                              width: "258",
+                              header: {
+                                text: "메뉴명",
+                              },
+                          },
+                          {
+                              name: "emplyr03Column",
+                              fieldName: "emplyr03",
+                              type: "data",
+                              width: "100",
+                              header: {
+                                text: "메뉴레벨",
+                              },
+                          },
+                          {
+                              name: "emplyr04Column",
+                              fieldName: "emplyr04",
+                              type: "data",
+                              width: "100",
+                              header: {
+                                text: "정렬순서",
+                              },
+                          },
+                          {
+                              name: "emplyr05Column",
+                              fieldName: "emplyr05",
+                              type: "data",
+                              width: "100",
+                              header: {
+                                text: "사용여부",
+                              },
+                          }
+                        ]); 
+                        //provider.setRows(data);
+                          
+                        provider.setRows([
+                        	{
+                                emplyr01: 'RE10-01',
+                                emplyr02: '교통비 사용 통계내역1',
+                                emplyr03: '2',
+                                emplyr04: '1',
+                                emplyr05: 'Y'
+                            },
+                            {
+                                emplyr01: 'RE10-02',
+                                emplyr02: '교통비 사용 통계내역2',
+                                emplyr03: '2',
+                                emplyr04: '1',
+                                emplyr05: 'Y'
+                            },
+                            {
+                                emplyr01: 'RE10-03',
+                                emplyr02: '교통비 사용 통계내역3',
+                                emplyr03: '2',
+                                emplyr04: '1',
+                                emplyr05: 'Y'
+                            },
+                            {
+                                emplyr01: 'RE10-04',
+                                emplyr02: '교통비 사용 통계내역4',
+                                emplyr03: '2',
+                                emplyr04: '1',
+                                emplyr05: 'Y'
+                            },
+                            {
+                                emplyr01: 'RE10-05',
+                                emplyr02: '교통비 사용 통계내역5',
+                                emplyr03: '2',
+                                emplyr04: '1',
+                                emplyr05: 'Y'
+                            }
+                            
+                        ]);
+                        
+                      });
+                   
+                </script> 
+                    
+                	<div class="rightGridTable">
+                		<div id="realGrid"></div>
+                	</div>
+                </div>
+                <!-- //container -->
+                <!-- container -->
+                <div class="container mgt-0 mgb-0">
+                    
+                    <div class="btnGroup mgb-15 clearfix">
+                        <div class="fl">
+                            <h3 class="topText">상세메뉴 정보</h3>
+                        </div>
+                        <div class="fr">
+                            <a href="" class="BtnLinegray">저장</a>
+                            <a href="" class="BtnLinegray">취소</a>
+                        </div>
+                        
+                    </div> 
+                    
+                    <div class="rightTable">
+                    
+		                    <table class="tableType01">
+		                        <caption></caption>
+		                        <colgroup>
+		                            <col style="width: 20%;"/>
+		                            <col style="width: 30%;"/>
+		                            <col style="width: 20%;"/>
+		                            <col style="width: 30%;"/>
+		                        </colgroup>
+		                        <tbody>
+		                            <tr>
+		                                <th><label for="input01"><span class="dot">메뉴ID</span></label></th>
+		                                <td><input type="text" id="input01" class="inputTxt w100" value="CM31-00"></td>
+		                                <th><label for="input02">상위메뉴ID</label></th>
+		                                <td><input type="text" id="input02" class="inputTxt w100" value="CM30-00"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input03"><span class="dot">메뉴명(한글)</span></label></th>
+		                                <td colspan="3"><input type="text" id="input03" class="inputTxt w100" value="업무권한관리"></td>
+		                            </tr>
+		                            
+		                            <tr>
+		                                <th><label for="input04">메뉴명(영문)</label></th>
+		                                <td colspan="3"><input type="text" id="input04" class="inputTxt w100" value="Biz Manage"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input05">메뉴레벨</label></th>
+		                                <td><input type="text" id="input05" class="inputTxt w100"></td>
+		                                <th><label for="input06">정렬순서</label></th>
+		                                <td><input type="text" id="input06" class="inputTxt w100"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="radio01"><span class="dot">권한관리여부</span></label></th>
+		                                <td>
+		                                	<div>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio01" name="radioGroup01" value="사용" checked>
+		                                            <label for="radio01">사용</label>
+		                                        </span>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio02" name="radioGroup01" value="미사용">
+		                                            <label for="radio02">미사용</label>
+		                                        </span>
+		                                    </div>
+		                                </td>
+		                                <th><label for="radio03"><span class="dot">사용여부</span></label></th>
+		                                <td>
+		                                	<div>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio03" name="radioGroup02" value="사용" checked>
+		                                            <label for="radio03">사용</label>
+		                                        </span>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio04" name="radioGroup02" value="미사용">
+		                                            <label for="radio04">미사용</label>
+		                                        </span>
+		                                    </div>
+		                                </td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input07">URL</label></th>
+		                                <td colspan="3"><input type="text" id="input07" class="inputTxt w100"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input08">메뉴설명</label></th>
+		                                <td colspan="3"><input type="text" id="input08" class="inputTxt w100" value="권한별 접근가능 화면 및 기능 설명"></td>
+		                            </tr>
+		                            
+		                        </tbody>
+		                    </table>
+		
+		                </div>
+		                
+                </div>
+                <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+</body>
+</html>

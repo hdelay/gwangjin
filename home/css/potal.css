@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+
+
+
+.potal-lnb-wrap{width:210px; height: 100%; position: fixed; z-index:90; background: #e1f0ff; padding: 40px 0px;}
+.potal-lnb-wrap ul{}
+.potal-lnb-wrap ul li{line-height: 45px; font-size: 15px; font-weight: 600; text-align: left; }
+.potal-lnb-wrap ul li:hover a{color: #3e97ff;}
+.potal-lnb-wrap ul li span.badge{ display:none;}
+
+.potal-lnb-wrap ul li.active{background: #3e97ff;}
+.potal-lnb-wrap ul li.active span.badge{width: 10px; height: 10px; background: #ffffff; display: inline-block; line-height: 45px; position: absolute; left: 8px; margin-top: 17px; border-radius: 30px;}
+.potal-lnb-wrap ul li.active a{color: #ffffff; padding-left: 30px;}
+.potal-lnb-wrap ul li a{color: #132144; padding-left: 30px;}
+
+.potal-lnb-wrap ul li >.dropdown{ display:none;}
+.potal-lnb-wrap ul li.active >.dropdown{ display:block; background-color: #e1f0ff;}
+.potal-lnb-wrap ul li.active >.dropdown ul{}
+.potal-lnb-wrap ul li.active >.dropdown ul li{line-height: 40px; padding: 0px 0px 0px 20px; font-size: 14px; font-weight: 400; text-align: left;}
+.potal-lnb-wrap ul li.active >.dropdown ul li a{color: #132144;}
+
+.potal-lnb-wrap ul li.active >.dropdown ul li.on{}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on a{color: #3e97ff;}
+
+.potal-lnb-wrap ul li.active >.dropdown ul li>.depth-menu{ display:none;}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu{ display:block;}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu ul{}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu ul li{line-height: 28px; padding: 0px 15px; font-weight: 300;}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu ul li a{color:#132144;}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu ul li.over{}
+.potal-lnb-wrap ul li.active >.dropdown ul li.on >.depth-menu ul li.over a{color: #3e97ff;}
+
+
+.dropdown{display:none;}
+.depth-menu{display:none;}
+
+
+
+
+.potal-main-daily.col-7{flex: 0 0 58%; max-width: 58%;}
+
+.potal-main-daily{background: #fff; height:100%; padding: 20px 20px; border-radius: 5px; box-shadow: 1px 1px 5px #ccc;float:left; margin-right: 3%;}
+.potal-main-daily h3{color: #333; font-size: 18px; font-weight: 500; text-align: left; line-height: 40px; margin-bottom: 10px;}
+
+.potal-main-daily ul{width: 100%;position: relative;     margin: 35px 0px 10px 0px;}
+.potal-main-daily ul li{display: inline-block; width: 24%; height: auto; text-align: center;}
+
+.potal-main-daily ul li h4{width:100%; height: 62px; position: relative; text-align: center; line-height: 62px; display: inline-block; font-size: 24px; font-weight: 600; color: #333;}
+.potal-main-daily ul li p{width: 100%; height: auto; position: relative; text-align: center; line-height: 24px; font-size: 14px; font-weight: 500; color:#3f97ff;}
+.potal-main-daily ul li img{position: relative;}
+
+
+
+.potal-main-board.col-4{flex: 0 0 38%; max-width: 38%;}
+
+.potal-main-board{background: #fff; height:100%; padding: 20px 20px; border-radius: 5px; box-shadow: 1px 1px 5px #ccc; display: inline-block;}
+.potal-main-board h3{color: #333; font-size: 18px; font-weight: 500; text-align: left; line-height: 40px; margin-bottom: 10px;}
+
+.potal-main-board h3 span.tit{}
+.potal-main-board h3 button{width: 28px; height: 28px; background: #f3f6f9; border-radius: 5px; font-size: 18px; font-weight: 700; color: #333; line-height: 28px; float: right; margin-top: 3px;}
+
+.potal-main-board ul{ border-top: 1px #3f4254 solid; border-bottom: 1px #3f4254 solid; position: relative; width: 100%; height: auto; text-align: left;}
+.potal-main-board ul li{width: 100%; height: 40px; border-bottom: 1px #ddd solid; line-height: 40px; font-size: 14px; font-weight: 400; text-align: left; padding: 0px 10px; color: #777777;}
+
+.potal-main-board ul li span{}
+.potal-main-board ul li span.board-tit{float: left; width: 73%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+.potal-main-board ul li span.date{float: right; width:25%; text-align: right;}
+
+
+
+.status-label{width: auto; height: 35px; text-align: left;}
+.status-label label{ font-size: 14px; font-weight: 500; color: #333; margin-right: 15px; line-height: 35px;}
+.status-label label span{ display: inline-block; width: 10px; height: 10px; border-radius: 30px; margin-right: 5px;}
+
+
+
+.sub-tab{width: 100%; height: 50px; position: relative; margin-bottom: 20px; text-align: left;}
+.sub-tab ul{width: 100%; height: 50px; position: relative;}
+.sub-tab ul li{float: left; padding: 0px 20px; line-height: 50px; font-size: 16px; font-weight: 500; background: #f3f6f9;;}
+.sub-tab ul li a{color: #6e8192; display: block;}
+.sub-tab ul li:hover a{color: #3699ff;}
+
+
+.sub-tab ul li.active{ background: #6e8192;}
+.sub-tab ul li.active a{color: #fff;}
+
+
+
+.status-tb{} 
+.status-tb tbody td{} 
+.status-tb tbody td span{width: 9px;  height: 9px; display: inline-block; border-radius: 30px; margin-right: 5px;}
+
+
+
+

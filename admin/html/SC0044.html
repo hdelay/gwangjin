@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>배너 관리</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="" class="focus">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main">
+
+            <div class="layoutTop2">
+				<div class="container mgt-0 mgb-0 clearfix pdb0 minWidth">
+					<div class="btnGroup mgb-15 clearfix">
+						<div class="fl">
+							<h3 class="topText">상단 배너</h3>
+						</div>
+					</div>
+					<!-- container -->
+					<div class="container left fl">
+						<div class="btnGroup clearfix">
+							<div class="fl">
+								<!-- <h3 class="topText">상단 배너</h3> -->
+							</div>
+							<div class="fr">
+								<a href="" class="BtnLinegray">추가</a>
+							</div>
+						</div>
+						
+						<script type="text/javascript">
+							document.addEventListener('DOMContentLoaded', function () {
+								
+								const container = document.getElementById('realGrid');
+								const provider = new RealGrid.LocalDataProvider(false);
+								const gridView = new RealGrid.GridView(container);
+								//provider.fillJsonData('${userList}', { fillMode: 'set' });
+							   
+								//var data = JSON.parse('${userList}');
+								
+								//컬럼 너비 자동조절
+								gridView.displayOptions.fitStyle = "even";
+								
+								//헤더 높이조정
+								var headerHeight = gridView.header.height;
+								gridView.header.height = headerHeight + 50;
+								
+								//행높이 조정
+								var height = gridView.displayOptions.rowHeight;
+								gridView.displayOptions.rowHeight = height + 50;
+								
+								//상태바
+								gridView.setStateBar({
+								  visible: false
+								});
+								//체크박스바
+								gridView.setCheckBar({
+								  visible: false
+								});
+								
+								//번호
+								gridView.setRowIndicator({
+									visible: false
+								});
+							   
+								gridView.setDataSource(provider);
+								//데이터의 필드 정의하는 부분
+								provider.setFields([
+									{
+										fieldName: "emplyr01",
+										dataType: "text",
+									}
+								]);
+								//그리드뷰 푸터 안보이게 
+								gridView.setFooters({ visible:false});
+								// 컬럼 생성
+								gridView.setColumns([
+								  {
+									name: "emplyrIdColumn",
+									fieldName: "emplyr01",
+									type: "data",
+									width: "60",
+									header: {
+									  text: "배너명",
+									},
+									styleName: "agn-c"
+								  }
+								]); 
+								//provider.setRows(data);
+								  
+								provider.setRows([
+									{
+										emplyr01: 'mainBanner01.jpg'
+									},
+									{
+										emplyr01: 'mainBanner02.jpg'
+									},
+									{
+										emplyr01: 'mainBanner03.jpg'
+									},
+									{
+										emplyr01: 'mainBanner04.jpg'
+									},
+									{
+										emplyr01: 'mainBanner05.jpg'
+									},
+									{
+										emplyr01: 'mainBanner06.jpg'
+									},
+									{
+										emplyr01: 'mainBanner07.jpg'
+									},
+									{
+										emplyr01: 'mainBanner08.jpg'
+									},
+									{
+										emplyr01: 'mainBanner09.jpg'
+									},
+									{
+										emplyr01: 'mainBanner10.jpg'
+									}
+								]);
+								
+							  });
+						   
+						</script> 
+							
+						<div class="downGridTable">
+							<div id="realGrid"></div>
+						</div>
+						
+					</div>
+					<!-- //container -->
+				
+					<!-- container -->
+					<div class="container right fl">
+					
+						<div class="btnGroup mgb-15 clearfix">
+	                        <div class="fl">
+	                            <span class="topText">※ 이미지 사이즈 (870 x 480 px)</span>
+	                        </div>
+	                        <div class="fr">
+	                            <a href="" class="BtnLinegray">삭제</a>
+	                            <a href="" class="BtnLinegray">저장</a>
+	                        </div>
+	                        
+	                    </div> 
+							
+						<div class="rightTable">
+                    
+		                    <table class="tableType01">
+		                        <caption></caption>
+		                        <colgroup>
+		                            <col style="width: 30%;"/>
+		                            <col style="width: 70%;"/>
+		                        </colgroup>
+		                        <tbody>
+		                            <tr>
+		                                <th><label for="input01"><span class="dot">배너명</span></label></th>
+		                                <td><input type="text" id="input01" class="inputTxt w100" value=""></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input03"><span class="dot">이미지</span></label></th>
+		                                <td colspan="3">
+		                                	<div class="inputGroup">
+		                                        <input type="text" id="input03" class="inputTxt w100-50">
+		                                        <a href="" class="search mgl-5 modalBtn001" title="검색하기"></a>
+		                                    </div>
+		                                </td>
+		                            </tr>
+		                            
+		                            <tr>
+		                                <th><label for="input04"><span class="dot">링크 URL</span></label></th>
+		                                <td><input type="text" id="input04" class="inputTxt w100" value=""></td>
+		                            </tr>
+		                        </tbody>
+		                    </table>
+		
+		                </div>
+	
+					</div>
+					<!-- //container -->
+
+				</div>
+			</div>
+            <div class="layoutBottom2 mgt-20">
+            	<!-- container -->
+	            <div class="container mgb-0 mgt-0 minWidth">
+					<div class="btnGroup mgb-15 clearfix">
+						<div class="fl">
+							<h3 class="topText">하단 배너 (※ 이미지 사이즈 870 x 480 px)</h3>
+						</div>
+						<div class="fr">
+                            <a href="" class="BtnLinegray">저장</a>
+                        </div>
+					</div>
+					
+					<table class="tableType01">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 70%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                            	<th rowspan="2" class="agn-c">배너 1</th>
+                                <th><label for="input01"><span class="dot">이미지</span></label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                        <input type="text" id="input01" class="inputTxt w100-50">
+                                        <a href="" class="search mgl-5 modalBtn001" title="검색하기"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input02"><span class="dot">링크 URL</span></label></th>
+                                <td><input type="text" id="input02" class="inputTxt w100" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <table class="tableType01 mgt-20">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 70%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                            	<th rowspan="2" class="agn-c">배너 2</th>
+                                <th><label for="input03"><span class="dot">이미지</span></label></th>
+                                <td>
+                                	<div class="inputGroup">
+                                        <input type="text" id="input03" class="inputTxt w100-50">
+                                        <a href="" class="search mgl-5 modalBtn001" title="검색하기"></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input04"><span class="dot">링크 URL</span></label></th>
+                                <td><input type="text" id="input04" class="inputTxt w100" value=""></td>
+                            </tr>
+                        </tbody>
+                    </table>
+					
+	            </div>
+	            <!-- //container -->
+            </div>
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+</body>
+</html>

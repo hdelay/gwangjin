@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>회원관리 목록</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main clearfix">
+
+            <div class="layoutTop">
+            	<!-- container -->
+	            <div class="container pd0 mgt-0 mgb-0">
+	                <div class="searchForm">
+	                    <form action="" class="clearfix">
+	                        <legend>검색</legend>
+	                        <table class="tableType02 fl">
+	                            <caption>검색 테이블</caption>
+	                            <colgroup>
+	                                <col style="width: 12%;"/>
+	                                <col style="width: 38%;"/>
+	                                <col style="width: 11%;"/>
+	                                <col style="width: 39%;"/>
+	                            </colgroup>
+	                            <tbody>
+	                                <tr>
+	                                    <th><label for="date01">조회기간</label></th>
+	                                    <td colspan="3">
+	                                        <div class="inputGroup">
+	                                            <input type="text" id="date01" class="inputTxt w30 startDate" placeholder="yyyy-mm-dd">
+	                                            <span class="mgl-5 mgr-5">~</span>
+	                                            <input type="text" class="inputTxt w30 endDate" placeholder="yyyy-mm-dd">
+	                                        </div>
+	                                    </td>
+	                                </tr>
+	                                <tr>
+	                                    <th><label for="input01">검색어</label></th>
+	                                    <td colspan="3">
+	                                        <div class="inputGroup">
+	                                            <select id="select01" class="selectBox w20">
+	                                                <option value="">전체</option>
+	                                                <option value="">회원ID</option>
+	                                                <option value="">회원명</option>
+	                                                <option value="">거주지(주소)</option>
+	                                                <option value="">승인여부</option>
+	                                            </select>
+	                                            <input type="text" id="input01" class="inputTxt w80-15 mgl-10">
+	                                        </div>
+	                                    </td>
+	                                </tr>
+	                            </tbody>
+	                        </table>
+	                        <button class="btnSearch fr mgr-10">검색</button>
+	                    </form>
+	                </div>
+	            </div>
+	            <!-- //container -->
+            </div>
+            <div class="layoutBottom">
+            	<!-- container -->
+	            <div class="container mgb-0 mgt-0">
+	            	<div class="btnGroup mgb-15 clearfix">
+	            		<div class="fl">
+	            			<span class="topText">검색결과 <strong>0</strong> 개</span>
+	            		</div>
+	                    <!-- 
+	                    <div class="fr">
+	                        <a href="" class="BtnLinegray">엑셀다운</a>
+	                    </div>
+	                     -->
+	                </div>
+	                
+	                <script type="text/javascript">
+	                    document.addEventListener('DOMContentLoaded', function () {
+	                        
+	                        const container = document.getElementById('realGrid');
+	                        const provider = new RealGrid.LocalDataProvider(false);
+	                        const gridView = new RealGrid.GridView(container);
+	                        //provider.fillJsonData('${userList}', { fillMode: 'set' });
+	                       
+	                        //var data = JSON.parse('${userList}');
+	                        
+	                        //컬럼 너비 자동조절
+	                        gridView.displayOptions.fitStyle = "even";
+	                        
+	                        //헤더 높이조정
+	                        var headerHeight = gridView.header.height;
+	                        gridView.header.height = headerHeight + 50;
+	                        
+	                        //행높이 조정
+	                        var height = gridView.displayOptions.rowHeight;
+							gridView.displayOptions.rowHeight = height + 50;
+							
+							//상태바
+							gridView.setStateBar({
+							  visible: false
+							});
+							//체크박스바
+							gridView.setCheckBar({
+								visible: false
+								//sumText: "string",
+								//headText: "선택",
+								//width: 70
+							});
+							//번호
+							gridView.setRowIndicator({
+							  headText: "순번",
+							  width: "70"
+							});
+	                       
+	                        gridView.setDataSource(provider);
+	                        //데이터의 필드 정의하는 부분
+	                        provider.setFields([
+	                            {
+		                            fieldName: "emplyrId",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyrNm",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyrAd",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyrPn",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyrDt",
+		                            dataType: "text",
+	                            }
+	                        ]);
+	                        //그리드뷰 푸터 안보이게 
+	                        gridView.setFooters({ visible:false});
+	                        // 컬럼 생성
+	                        gridView.setColumns([
+	                          {
+	                            name: "emplyrIdColumn",
+	                            fieldName: "emplyrId",
+	                            type: "data",
+	                            width: "120",
+	                            header: {
+	                              text: "회원ID",
+	                            },
+	                          },
+	                          {
+	                              name: "emplyrNmColumn",
+	                              fieldName: "emplyrNm",
+	                              type: "data",
+	                              width: "120",
+	                              header: {
+	                                text: "회원명",
+	                              },
+	                          },
+	                          {
+	                              name: "emplyrAdColumn",
+	                              fieldName: "emplyrAd",
+	                              type: "data",
+	                              width: "300",
+	                              header: {
+	                                text: "거주지(주소)",
+	                              },
+	                          },
+	                          {
+	                              name: "emplyrPnColumn",
+	                              fieldName: "emplyrPn",
+	                              type: "data",
+	                              width: "120",
+	                              header: {
+	                                text: "휴대번호",
+	                              },
+	                          },
+	                          {
+	                              name: "emplyrDtColumn",
+	                              fieldName: "emplyrDt",
+	                              type: "data",
+	                              width: "120",
+	                              header: {
+	                                text: "등록일자",
+	                              },
+	                          }
+	                        ]); 
+	                        //provider.setRows(data);
+	                          
+	                        provider.setRows([
+	                        	{
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            },
+	                            {
+	                                emplyrId: 'asdfg1234',
+	                                emplyrNm: '홍길동',
+	                                emplyrAd: '서울특별시 광진구 자양로 117(자양동) 1층',
+	                                emplyrPn: '010-0000-0000',
+	                                emplyrDt: '2020-08-27'
+	                            }
+	                        ]);
+	                        
+	                      });
+	                   
+	                </script> 
+	                    
+	                <div class="downGridTable">
+	               		<div id="realGrid">
+	               	</div>
+	                
+	                <div class="pagination">
+	                	<div class="pagiLeft">
+	                        <ul>
+	                            <li><a href="" title="최신목록">최신목록</a></li>
+	                            <li><a href="" title="이전목록">이전목록</a></li>
+	                        </ul>
+	                    </div>
+	                	<ul class="clearfix">
+	                		<li class="on"><a href="">1</a></li>
+	                        <li><a href="">2</a></li>
+	                        <li><a href="">3</a></li>
+	                        <li><a href="">4</a></li>
+	                        <li><a href="">5</a></li>
+	                        <li><a href="">6</a></li>
+	                        <li><a href="">7</a></li>
+	                        <li><a href="">8</a></li>
+	                        <li><a href="">9</a></li>
+	                        <li><a href="">10</a></li>
+	                	</ul>
+	                	<div class="pagiRight">
+	                        <ul>
+	                            <li><a href="" title="다음목록">다음목록</a></li>
+	                            <li><a href="" title="마지막목록">마지막목록</a></li>
+	                        </ul>
+	                    </div>
+	                </div>
+	
+	            </div>
+	            <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+	
+	<!-- 스마트 에디터 세팅1 -->
+	<script type="text/javascript" src="/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+	
+	
+    <!-- js -->
+	<script src="/js/common.js"></script>
+	<!-- 스마트 에디터 세팅2 -->
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var oEditors = [];
+		nhn.husky.EZCreator.createInIFrame({
+		    oAppRef: oEditors,
+		    elPlaceHolder: "ir1",
+		    sSkinURI: "/se2/SmartEditor2Skin.html",
+		    fCreator: "createSEditor2"
+		});
+		
+	});
+		
+	</script>
+	
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>공지사항 상세</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main clearfix">
+
+            <!-- container -->
+            <div class="container mgb-0 mgt-0 minWidth100">
+            	<div class="btnGroup mgb-15 clearfix">
+                    <div class="fr">
+                        <a href="" class="BtnLinegray">저장</a>
+                    </div>
+                </div>
+                <div class="containerOverflow">
+                    
+                    <table class="tableType01">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 85%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="input01">제목</label></th>
+                                <td><input type="text" id="input01" class="inputTxt w100" value="공지사항 제목" disabled></td>
+                            </tr>
+                            <tr>
+                                <th><label for="input02">내용</label></th>
+                                <td>
+                                	<!-- <textarea id="input02" class="textareaBox h200 w100" disabled>내용</textarea> -->
+                                	<textarea name="ir1" id="ir1" rows="10" cols="100" class="w99"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label>파일첨부</label></th>
+                                <td>
+                                	<a href="" class="link">첨부파일명.hwp</a>
+                                	<a href="" class="link">첨부파일명.pptx</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- //container -->
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+</body>
+</html>

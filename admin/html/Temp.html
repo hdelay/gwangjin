@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+    <!-- js -->
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/common.js"></script>
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip"></div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>대시보드</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav>
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <main>
+
+            <!-- container -->
+            <div class="container">
+                <div class="btnGroup mgb-15 clearfix">
+                    <div class="fr">
+                        <a href="" class="BtnLinegray">엑셀다운</a>
+                        <a href="" class="BtnLinegray">저장</a>
+                        <a href="" class="BtnLinegray">disabled</a>
+                        <a href="" class="BtnLinegray">취소</a>
+                    </div>
+                </div>
+                <div class="containerOverflow">
+                    
+                    <table class="tableType01">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 33%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 37%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th><label for="">회원 ID</label></th>
+                                <td>abcdefg123</td>
+                                <th>이메일</th>
+                                <td>
+                                	<div class="inputGroup">
+                                		<input type="text" id="input06" class="inputTxt w30">
+                                		<span class="mgl-5 mgr-5">@</span>
+                                		<input type="text" class="inputTxt w33">
+	                                	<select class="selectBox w30 mgl-5">
+	                                		<option>직접입력</option>
+	                                		<option>naver.com</option>
+	                                	</select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><label for="input01">일반텍스트</label></th>
+                                <td>
+                                    <input type="text" id="input01" class="inputTxt w100" placeholder="일반텍스트">
+                                </td>
+                                <th>패스워드</th>
+                                <td>
+                                    <input type="password" class="inputTxt w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>검색창</th>
+                                <td>
+                                    <div class="inputGroup">
+                                        <input type="text" class="inputTxt w100-50" placeholder="돋보기">
+                                        <a href="" class="search mgl-5" title="검색하기"></a>
+                                    </div>
+                                </td>
+                                <th>disabled</th>
+                                <td>
+                                    <input type="text" class="inputTxt inputDisabled w100" placeholder="disabled" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>날짜</th>
+                                <td>
+                                	<div class="inputGroup">
+	                                	<select id="select02" class="selectBox w100">
+	                                		<option>선택</option>
+	                                	</select>
+	                                	<span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w100">
+                                        <span class="mgl-5 mgr-5">-</span>
+                                        <input type="text" class="inputTxt w100">
+                                    </div>
+                                </td>
+                                <th>날짜</th>
+                                <td>
+                                    <div class="inputGroup">
+                                        <input type="text" class="inputTxt w100 datepicker" placeholder="datepicker">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>기간</th>
+                                <td>
+                                    <div class="inputGroup">
+                                        <input type="text" class="inputTxt w100 startDate" placeholder="yyyy-mm-dd">
+                                        <span class="mgl-5 mgr-5">~</span>
+                                        <input type="text" class="inputTxt w100 endDate" placeholder="yyyy-mm-dd">
+                                    </div>
+                                </td>
+                                <th>셀렉트</th>
+                                <td>
+                                    <select class="selectBox">
+                                        <option value="">전체</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>라디오 선택</th>
+                                <td>
+                                    <div>
+                                        <span class="radioGroup">
+                                            <input type="radio" id="radio03" name="radioGroup02" value="라디오선택지1">
+                                            <label for="radio03">라디오버튼</label>
+                                        </span>
+                                        <span class="radioGroup">
+                                            <input type="radio" id="radio04" name="radioGroup02" value="라디오선택지1">
+                                            <label for="radio04">라디오버튼</label>
+                                        </span>
+                                    </div>
+                                </td>
+                                <th>체크박스</th>
+                                <td>
+                                    <div>
+                                        <span class="checkboxGroup">
+                                            <input type="checkbox" id="checkbox01" name="checkboxGroup01" value="라디오선택지1">
+                                            <label for="checkbox01">체크박스</label>
+                                        </span>
+                                        <span class="checkboxGroup">
+                                            <input type="checkbox" id="checkbox02" name="checkboxGroup01" value="라디오선택지1">
+                                            <label for="checkbox02">체크박스</label>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table class="tableType01 mgt-10">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 33%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 37%;"/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">아이디</th>
+                                <th scope="col">아이디</th>
+                                <th scope="col">아이디</th>
+                                <th scope="col">아이디</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="agn-c">
+                                    <a href="" class="delete" title="삭제"></a>
+                                </td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                                <td><input type="password" class="inputTxt w100"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- //container -->
+
+        </main>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    <script>
+       
+    </script>
+</body>
+</html>

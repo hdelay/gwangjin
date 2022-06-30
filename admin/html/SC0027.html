@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>교통비 사용 통계내역 상세</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main clearfix">
+
+            <!-- container -->
+            <div class="container mgb-0 mgt-0 minWidth100">
+            	<div class="btnGroup mgb-15 clearfix">
+                    <!-- 
+                    <div class="fr">
+                        <a href="" class="BtnLinegray">저장</a>
+                    </div>
+                     -->
+                </div>
+                <div class="containerOverflow">
+                    
+                    <table class="tableType01">
+                        <caption></caption>
+                        <colgroup>
+                            <col style="width: 15%;"/>
+                            <col style="width: 33%;"/>
+                            <col style="width: 15%;"/>
+                            <col style="width: 37%;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>회원 ID</th>
+                                <td>abcdefg123</td>
+                                <th>생년월일</th>
+                                <td>1999-01-01</td>
+                            </tr>
+                            <tr>
+                                <th>회원명</th>
+                                <td>홍길동</td>
+                                <th>휴대전화번호</th>
+                                <td>010-1111-2222</td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>02-111-2222 </td>
+                                <th>이메일</th>
+                                <td>hkd1004@naver.com</td>
+                            </tr>
+                            <tr>
+                                <th>거주지(주소)</th>
+                                <td colspan="3">
+                                    <input type="text" class="inputTxt w30" value="05026" disabled>
+                                    <input type="text" class="inputTxt w100 mgt-5" value="서울특별시 광진구 자양로 117(자양동)" disabled>
+                                    <input type="text" class="inputTxt w100 mgt-5" value="1층" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>카드번호</th>
+                                <td colspan="3">0000 0000 0000 0000</td>
+                            </tr>
+                            <tr>
+                                <th>사용금액</th>
+                                <td colspan="3">21,250 원</td>
+                            </tr>
+                            <tr>
+                                <th>마일리지</th>
+                                <td colspan="3">20,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <!-- //container -->
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+</body>
+</html>

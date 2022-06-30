@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 마을버스 무상교통 시스템</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" href="../images/favicon.ico" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <!-- js -->
+    <!--
+    <script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+    -->
+    <script src="../js/pub/jquery-1.12.4.min.js"></script>
+    <script src="../js/pub/jquery-ui.js"></script>
+    <script src="../js/pub/slick.js"></script>
+    <script src="../js/common.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <div class="headerTop">
+                <div class="inner">
+                    <h1 class="logo"><a href="">광진구 마을버스 무상교통 시스템</a></h1>
+                    <div class="userMenu clearfix">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuBtn">
+                        <a href="">
+                            모바일 메뉴버튼
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <div class="inner">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">무상교통 등록 안내</a>
+                            <ul>
+                                <li><a href="">인사말</a></li>
+                                <li><a href="">사업안내</a></li>
+                                <li><a href="">회원가입 안내</a></li>
+                                <li><a href="">신청안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">지원내역</a>
+                            <ul>
+                                <li><a href="">지원금 신청</a></li>
+                                <li><a href="">신청결과</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">알림공간</a>
+                            <ul>
+                                <li><a href="">공지사항</a></li>
+                                <li><a href="">자주하는 질문</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="headerDim"></div>
+            </nav>
+            <!-- mobile -->
+            <div class="mobileMenu">
+                <div class="menuTop">
+                    <p>로그인이 필요합니다.</p>
+                    <div class="mobileUserMenu">
+                        <div class="out clearfix">
+                            <div class="login">
+                                <a href="">로그인</a>
+                            </div>
+                            <div class="join">
+                                <a href="">회원가입</a>
+                            </div>
+                        </div>
+                        <div class="in clearfix">
+                            <div class="logout">
+                                <a href="">로그아웃</a>
+                            </div>
+                            <div class="mypage">
+                                <a href="">마이페이지</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileMenuClose">
+                        <a href=""></a>
+                    </div>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">무상교통 등록 안내</a>
+                        <ul>
+                            <li><a href="">인사말</a></li>
+                            <li><a href="">사업안내</a></li>
+                            <li><a href="">회원가입 안내</a></li>
+                            <li><a href="">신청안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원내역</a>
+                        <ul>
+                            <li><a href="">지원금 신청</a></li>
+                            <li><a href="">신청결과</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">알림공간</a>
+                        <ul>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">자주하는 질문</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menuFooterLogo">
+                    <a href=""></a>
+                </div>
+            </div>
+            <!-- //mobile -->
+        </header>
+        <!-- //header -->
+
+        <!-- container -->
+        <div class="subMain">
+            <!-- mobile location -->
+            <div class="location">
+                <ul class="clearfix">
+                    <li>
+                        <a href="">홈</a>
+                    </li>
+                    <li>
+                        <a href="">회원관리</a>
+                        <ul>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                            <li><a href="">1depth</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">회원가입</a>
+                        <ul>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                            <li><a href="">2depth</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- //mobile location -->
+
+            <div class="inner clearfix">
+                <!-- menu -->
+                <div class="leftContent">
+                    <aside class="lnb">
+                        <h2>회원정보</h2>
+                        <ul>
+                            <li class="on"><a href="">회원정보</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="call">
+                        <span>언제나 친절히 상담해드리겠습니다.</span>
+                        <p><span>1577 - 0000</span></p>
+                        <ul>
+                            <li>평일: 오전 09시 00분 ~ 오후 06시 00분</li>
+                            <li>주말: 오전 10시 00분 ~ 오후 03시 00분</li>
+                        </ul>
+                    </aside>
+                </div>
+                <!-- //menu -->
+
+                <!-- container -->
+                <section class="rightContent">
+                    <div class="pcLoca">
+                        <h3>회원정보</h3>
+                        <ul class="clearfix">
+                            <li><a href="">홈</a></li>
+                            <li><a href="">회원정보</a></li>
+                            <li>회원정보</li>
+                        </ul>
+                    </div>
+                    <div class="contents">
+
+                        <div class="mypage">
+
+                            <form action="">
+                                <legend>회원정보</legend>
+                                <table class="tableType01">
+                                    <caption>회원정보</caption>
+                                    <colgroup>
+                                        <col style="width: 25%;"/>
+                                        <col style="width: 75%;"/>
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="">이름</label></th>
+                                            <td>홍길동</td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="">생년월일</label></th>
+                                            <td>1975-01-03</td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="input01">아이디</label></th>
+                                            <td>hkd1004</td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw01">비밀번호</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw01" class="inputText w100">
+                                                </div>
+                                                <span class="assistantText">
+                                                    ※ 영문, 숫자, 특수문자 중 2가지 이상 혼합하여 10~20자 입력하세요.(단, 영문자는 반드시 포함)<br/>
+                                                    ※ 아이디가 포함된 비밀번호는 사용하실 수 없습니다.<br/>
+                                                    ※ 비밀번호 기입 후 저장하면 비밀번호가 수정 됩니다.
+                                                </span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="pw02">비밀번호 확인</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="password" id="pw02" class="inputText w100">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><label for="select01">전화번호</label></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select01" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10" value="111">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10" value="2222">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="select02">휴대전화</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <select id="select02" class="selectType w33-10">
+                                                        <option value="">선택</option>
+                                                    </select>
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10" value="111">
+                                                    <span class="mgl-5 callDash mgr-5">-</span>
+                                                    <input type="text" class="inputText w33-10" value="2222">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="email">이메일</label></span></th>
+                                            <td>
+                                                <div class="inputGroup long">
+                                                    <input type="text" id="email" class="inputText w20" value="hkd1004">
+                                                    <span class="mgl-5 callDash mgr-5">@</span>
+                                                    <input type="text" class="inputText w26" value="naver.com">
+                                                    <select id="" class="selectType w20 mgl-5">
+                                                        <option value="">선택</option>
+                                                        <option value="">naver.com</option>
+                                                        <option value="">korea.co.kr</option>
+                                                        <option value="">gmail.com</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th><span class="dot"><label for="address">주소</label></span></th>
+                                            <td>
+                                                <div class="inputGroup">
+                                                    <input type="text" id="address" class="inputText w100-97" value="05026">
+                                                    <a href="" class="formBtn mgl-5">주소찾기</a>
+                                                </div>
+                                                <div class="inputGroup long mgt-5">
+                                                    <input type="text" class="inputText w50" value="서울특별시 광진구 자양로 117(자양동)">
+                                                    <input type="text" class="inputText w40 mgl-5" value="1층">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="btnGroup clearfix mgt-20">
+                                    <a href="" class="bigBlueBtn w50-10 fl">저장</a>
+                                    <a href="" class="bigGrayBtn w50-10 fr">취소</a>
+                                </div>
+                            </form>
+
+                        </div>
+
+
+                    </div>
+                </section>
+                <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //container -->
+
+        <!-- footer -->
+        <footer>
+            <div class="footerTop">
+                <div class="inner">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">이메일무단수집거부</a></li>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">사이트맵</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <div class="inner clearfix">
+                    <h2 class="footerLogo"><a href="" title="푸터 로고">광진구 마을버스 무상교통 시스템</a></h2>
+                    <ul>
+                        <li>(05065)서울특별시 광진구 능동로 76 광진구시설관리공단 (우 05065) 고유번호: 206-82-07233</li>
+                        <li>© 2021 GWANGJIN-GU OFFICE. ALL RIGHTS RESERVED.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+    </div>
+</body>
+</html>

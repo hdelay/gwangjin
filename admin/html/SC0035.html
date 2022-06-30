@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!--[if lt IE 9]>
+        <script src="/static/jslibrary/css3-mediaqueries-js-master/css3-mediaqueries.min.js"></script>
+        <script src="/static/jslibrary/html5shiv-master/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>광진구 어린이·청소년 마을버스 무상 등록 관리시스템</title>
+    
+    <!-- 리얼그리드 2.0 -->
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/realgrid.2.1.0/realgrid-style.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/commonTb.css">
+
+	<script src="/webjars/jquery/2.1.1/dist/jquery.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/jquery.validate.min.js"></script>
+	<script src="/webjars/jquery-validation/1.17.0/additional-methods.min.js"></script>
+	<script src="/webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+	<script src="/webjars/jquery-form/4.2.1/jquery.form.min.js"></script>
+	
+	<!-- 리얼그리드 2.0 js -->
+	<script src="/js/realgrid.2.1.0/realgrid.2.1.0.min.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-utils.js"></script>
+	<script src="/js/realgrid.2.1.0/realgrid-lic.js"></script>
+    <!-- js -->
+	<script src="/js/common.js"></script>
+	
+	
+	<!-- Custom -->
+    <link href="./test/index.css" rel="stylesheet" />
+    <script src="./test/SC0032.js"></script>
+
+
+</head>
+<body>
+    <!-- skip navigation -->
+    <div class="skip">
+        <a href="#gnb">주메뉴 바로가기</a>
+        <a href="#main">본문으로 바로가기</a>
+    </div>
+    <!-- //skip navigation -->
+
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header>
+            <h2>공통코드 관리</h2>
+            <span><strong>사용자</strong>님 반갑습니다!</span>
+            <div class="btnGroup">
+                <a href="" class="btnBlue">정보수정</a>
+                <a href="" class="btnGray mgl-10">로그아웃</a>
+            </div>
+        </header>
+        <!-- //header -->
+
+        <!-- nav -->
+        <nav id="gnb">
+            <h1>광진구 어린이·청소년 <span>마을버스 무상 등록</span> 관리시스템</h1>
+            <div class="gnb">
+                <ul>
+                    <li>
+                        <a href="">대시보드</a>
+                    </li>
+                    <li>
+                        <a href="">현황관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">신청자 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">지원관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li><a href="">조회목록</a></li>
+                            <li><a href="">통계내역 상세보기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">공통관리<span class="menuMore"></span></a>
+                        <ul>
+                            <li>
+                                <a href="">회원 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 회원정보조회 목록</a></li>
+                                    <li><a href="">· 회원정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">사용자정보 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 사용자정보조회 목록</a></li>
+                                    <li><a href="">· 사용자정보 상세보기</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">서비스 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 메뉴 관리</a></li>
+                                    <li><a href="">· 조직별 권한 관리</a></li>
+                                    <li><a href="">· 사용자별 권한 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">코드 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공통코드 관리</a></li>
+                                    <li><a href="">· 조직코드 관리</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게시판 관리<span class="menuMore"></span></a>
+                                <ul>
+                                    <li><a href="">· 공지사항</a></li>
+                                    <li><a href="">· 자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">개인정보 관리</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //nav -->
+
+        <!-- main -->
+        <div id="main" class="main clearfix">
+
+            <!-- container -->
+            <div class="layoutLeft fl w40-10">
+            	<div class="container mgt-0 mgb-0">
+	                <div class="btnGroup mgb-15 clearfix">
+	                    <div class="fl">
+	                        <h3 class="topText">메뉴정보</h3>
+	                    </div>
+	                    <div class="fr">
+	                        <a href="" class="BtnLinegray">엑셀다운</a>
+	                    </div>
+	                </div>
+	                <div class="submenu clearfix">
+	                	<select class="selectBox w30 mgl-5 fl">
+		            		<option>선택</option>
+		            		<option>그룹코드명</option>
+		            	</select>
+		           		<input type="text" id="input06" class="inputTxt w70-149 fl mgl-5">
+		           		<div class="fr mgr-5">
+			           		<a href="" class="BtnLinegray mgl-5">검색</a>
+			           		<a href="" class="BtnLinegray mgl-5 modalBtn003">추가</a>
+		           		</div>
+	                </div>
+	                <div class="leftGridTable">
+	                	<script type="text/javascript">
+		                    document.addEventListener('DOMContentLoaded', function () {
+		                        
+		                        const container = document.getElementById('realGrid');
+		                        const provider = new RealGrid.LocalDataProvider(false);
+		                        const gridView = new RealGrid.GridView(container);
+		                        //provider.fillJsonData('${userList}', { fillMode: 'set' });
+		                       
+		                        //var data = JSON.parse('${userList}');
+		                        
+		                        //컬럼 너비 자동조절
+		                        gridView.displayOptions.fitStyle = "even";
+		                        
+		                        //헤더 높이조정
+		                        var headerHeight = gridView.header.height;
+		                        gridView.header.height = headerHeight + 50;
+		                        
+		                        //행높이 조정
+		                        var height = gridView.displayOptions.rowHeight;
+								gridView.displayOptions.rowHeight = height + 50;
+								
+								//상태바
+								gridView.setStateBar({
+								  visible: false
+								});
+								//체크박스바
+								gridView.setCheckBar({
+									visible: false
+									//sumText: "string",
+									//headText: "선택",
+									//width: 70
+								});
+								//번호
+								gridView.setRowIndicator({
+									visible: false
+								});
+		                       
+		                        gridView.setDataSource(provider);
+		                        //데이터의 필드 정의하는 부분
+		                        provider.setFields([
+		                            {
+			                            fieldName: "emplyr01",
+			                            dataType: "text",
+		                            },
+		                            {
+			                            fieldName: "emplyr02",
+			                            dataType: "text",
+		                            },
+		                            {
+			                            fieldName: "emplyr03",
+			                            dataType: "text",
+		                            }
+		                        ]);
+		                        //그리드뷰 푸터 안보이게 
+		                        gridView.setFooters({ visible:false});
+		                        // 컬럼 생성
+		                        gridView.setColumns([
+		                          {
+		                            name: "emplyr01Column",
+		                            fieldName: "emplyr01",
+		                            type: "data",
+		                            width: "110",
+		                            header: {
+		                              text: "그룹코드ID",
+		                            },
+		                          },
+		                          {
+		                              name: "emplyr02Column",
+		                              fieldName: "emplyr02",
+		                              type: "data",
+		                              width: "110",
+		                              header: {
+		                                text: "그룹코드명",
+		                              },
+		                          },
+		                          {
+		                              name: "emplyr03Column",
+		                              fieldName: "emplyr03",
+		                              type: "data",
+		                              width: "80",
+		                              header: {
+		                                text: "사용유무",
+		                              },
+		                          }
+		                        ]); 
+		                        //provider.setRows(data);
+		                          
+		                        provider.setRows([
+		                        	{
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            },
+		                            {
+		                                emplyr01: 'SYSCODE',
+		                                emplyr02: '시스템코드',
+		                                emplyr03: 'Y'
+		                            }
+		                            
+		                        ]);
+		                        
+		                      });
+		                   
+		                </script> 
+		                    
+		                <div id="realGrid"></div>
+	                </div>
+	            </div>
+            </div>
+            <!-- //container -->
+            
+            <div class="layoutRight fr w60-10">
+                <!-- container -->
+                <div class="container mgt-0">
+                    <div class="btnGroup mgb-15 clearfix">
+                        <div class="fl">
+                            <h3 class="topText">하위메뉴 목록</h3>
+                        </div>
+                        <div class="fr">
+                            <a href="" class="BtnLinegray">엑셀다운</a>
+                        </div>
+                    </div>
+                    
+                    <script type="text/javascript">
+	                    document.addEventListener('DOMContentLoaded', function () {
+	                        
+	                        const container = document.getElementById('realGrid2');
+	                        const provider = new RealGrid.LocalDataProvider(false);
+	                        const gridView = new RealGrid.GridView(container);
+	                        //provider.fillJsonData('${userList}', { fillMode: 'set' });
+	                       
+	                        //var data = JSON.parse('${userList}');
+	                        
+	                        //컬럼 너비 자동조절
+	                        gridView.displayOptions.fitStyle = "even";
+	                        
+	                        //헤더 높이조정
+	                        var headerHeight = gridView.header.height;
+	                        gridView.header.height = headerHeight + 50;
+	                        
+	                        //행높이 조정
+	                        var height = gridView.displayOptions.rowHeight;
+							gridView.displayOptions.rowHeight = height + 50;
+							
+							//상태바
+							gridView.setStateBar({
+							  visible: false
+							});
+							//체크박스바
+							gridView.setCheckBar({
+								visible: false
+								//sumText: "string",
+								//headText: "선택",
+								//width: 70
+							});
+							//번호
+							gridView.setRowIndicator({
+								 headText: "순번",
+								 width: "70"
+							});
+	                       
+	                        gridView.setDataSource(provider);
+	                        //데이터의 필드 정의하는 부분
+	                        provider.setFields([
+	                            {
+		                            fieldName: "emplyr01",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyr02",
+		                            dataType: "text",
+	                            },
+	                            {
+		                            fieldName: "emplyr03",
+		                            dataType: "text",
+	                            }
+	                        ]);
+	                        //그리드뷰 푸터 안보이게 
+	                        gridView.setFooters({ visible:false});
+	                        // 컬럼 생성
+	                        gridView.setColumns([
+	                          {
+	                            name: "emplyr01Column",
+	                            fieldName: "emplyr01",
+	                            type: "data",
+	                            width: "110",
+	                            header: {
+	                              text: "그룹코드ID",
+	                            },
+	                          },
+	                          {
+	                              name: "emplyr02Column",
+	                              fieldName: "emplyr02",
+	                              type: "data",
+	                              width: "260",
+	                              header: {
+	                                text: "그룹코드명",
+	                              },
+	                          },
+	                          {
+	                              name: "emplyr03Column",
+	                              fieldName: "emplyr03",
+	                              type: "data",
+	                              width: "80",
+	                              header: {
+	                                text: "사용유무",
+	                              },
+	                          }
+	                        ]); 
+	                        //provider.setRows(data);
+	                          
+	                        provider.setRows([
+	                        	{
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            },
+	                            {
+	                                emplyr01: 'SYSCODE',
+	                                emplyr02: '시스템코드',
+	                                emplyr03: 'Y'
+	                            }
+	                            
+	                        ]);
+	                        
+	                      });
+	                   
+	                </script> 
+	                <div class="rightGridTable"><div id="realGrid2"></div></div>
+                </div>
+                <!-- //container -->
+                
+                <!-- container -->
+                <div class="container mgt-0 mgb-0">
+                    
+                    <div class="btnGroup mgb-15 clearfix">
+                        <div class="fl">
+                            <h3 class="topText">상세메뉴 정보</h3>
+                        </div>
+                        <div class="fr">
+                            <a href="" class="BtnLinegray">엑셀다운</a>
+                        </div>
+                        
+                    </div> 
+                    
+                    <div class="rightTable">
+                    
+		                    <table class="tableType01">
+		                        <caption></caption>
+		                        <colgroup>
+		                            <col style="width: 25%;"/>
+		                            <col style="width: 25%;"/>
+		                            <col style="width: 25%;"/>
+		                            <col style="width: 25%;"/>
+		                        </colgroup>
+		                        <tbody>
+		                            <tr>
+		                                <th><label for="input01">그룹코드ID</label></th>
+		                                <td><input type="text" id="input01" class="inputTxt w100" value="CM31-00"></td>
+		                                <th><label for="input02">그룹코드명</label></th>
+		                                <td><input type="text" id="input02" class="inputTxt w100" value="CM30-00"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input03"><span class="dot">코드ID</span></label></th>
+		                                <td><input type="text" id="input03" class="inputTxt w100" value="CM31-00"></td>
+		                                <th><label for="input04"><span class="dot">코드명</span></label></th>
+		                                <td><input type="text" id="input04" class="inputTxt w100" value="CM30-00"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="radio01"><span class="dot">사용유무</span></label></th>
+		                                <td>
+		                                	<div>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio01" name="radioGroup01" value="사용" checked>
+		                                            <label for="radio01">사용</label>
+		                                        </span>
+		                                        <span class="radioGroup">
+		                                            <input type="radio" id="radio02" name="radioGroup01" value="미사용">
+		                                            <label for="radio02">미사용</label>
+		                                        </span>
+		                                    </div>
+		                                </td>
+		                                <th><label for="input05"><span class="dot">정렬순서</span></label></th>
+		                                <td><input type="text" id="input05" class="inputTxt w100" value="CM30-00"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input06">코드 약어</label></th>
+		                                <td colspan="3"><input type="text" id="input06" class="inputTxt w100" value="업무권한관리"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input07">코드 설명</label></th>
+		                                <td colspan="3"><input type="text" id="input07" class="inputTxt w100" value="Biz Manage"></td>
+		                            </tr>
+		                            <tr>
+		                                <th><label for="input08">비고</label></th>
+		                                <td colspan="3"><input type="text" id="input08" class="inputTxt w100" value="Biz Manage"></td>
+		                            </tr>
+		                            
+		                        </tbody>
+		                    </table>
+		
+		                </div>
+		                
+                </div>
+                <!-- //container -->
+            </div>
+
+        </div>
+        <!-- //main -->
+
+    </div>
+    <!-- //wrap -->
+    
+    <!-- 레이어팝업003 :: 그룹코드 정보관리 -->
+    <div class="modalPopup modal003">
+    	<div class="modalTit clearfix">
+    		<h3 class="fl">그룹코드 정보관리</h3>
+    		<a href="" class="modalClose fr">닫기</a>
+    	</div>
+    	<div class="modalContent">
+    		
+    		<table class="tableType01">
+	            <caption></caption>
+	            <colgroup>
+	                <col style="width: 25%;"/>
+	                <col style="width: 75%;"/>
+	            </colgroup>
+	            <tbody>
+	                <tr>
+	                    <th><label for="input001"><span class="dot">그룹코드ID</span></label></th>
+	                    <td>
+	                   		<div class="inputGroup">
+	                            <input type="text" id="input001" class="inputTxt w100-105">
+	                            <a href="" class="btnInput edit mgl-5" title="중복체크">중복체크</a>
+	                        </div>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th><label for="input002"><span class="dot">그룹코드명</span></label></th>
+	                    <td><input type="text" id="input002" class="inputTxt w100" value="CM31-00"></td>
+	                </tr>
+	                <tr>
+	                    <th><label for="radio01"><span class="dot">사용유무</span></label></th>
+	                    <td>
+	                    	<div>
+	                            <span class="radioGroup">
+	                                <input type="radio" id="radio001" name="radioGroup001" value="사용" checked>
+	                                <label for="radio001">사용</label>
+	                            </span>
+	                            <span class="radioGroup">
+	                                <input type="radio" id="radio002" name="radioGroup001" value="미사용">
+	                                <label for="radio002">미사용</label>
+	                            </span>
+	                        </div>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <th><label for="input003">그룹코드 약어</label></th>
+	                    <td><input type="text" id="input003" class="inputTxt w100" value="업무권한관리"></td>
+	                </tr>
+	                <tr>
+	                    <th><label for="input004">코드 설명</label></th>
+	                    <td><input type="text" id="input004" class="inputTxt w100" value="Biz Manage"></td>
+	                </tr>
+	                <tr>
+	                    <th><label for="input005">비고</label></th>
+	                    <td><input type="text" id="input005" class="inputTxt w100" value="Biz Manage"></td>
+	                </tr>
+	                
+	            </tbody>
+	        </table>
+	        
+	        <div class="modalBtnGroup agn-c mgt-20 mgb-10">
+  				<a href="" class="Btnblack">저장</a>
+  				<a href="" class="BtnLinegray mgl-10 modalClose2">취소</a>
+  			</div>
+    		
+    	</div>
+    </div>
+    <div class="modalDim"></div>
+    <!-- //레이어팝업003 :: 그룹코드 정보관리 -->
+    
+</body>
+</html>
